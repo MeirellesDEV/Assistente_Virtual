@@ -99,7 +99,7 @@ if __name__ == "__main__":
         elif 'hora' in comando: #comando que fala aa hora
             tempo()
 
-        elif 'data' in comando: #comando que diz a data
+        elif 'data' in comando or 'dia é hoje' in comando: #comando que diz a data
             data()
 
         elif 'navegador' in comando: #comando que abre o navegador
@@ -123,5 +123,5 @@ if __name__ == "__main__":
             falar('Eu sou o '+ bot_name +' e é um prazer em conhecer você')
 
         elif 'finalizar' in comando:
-            falar('Estamos finalizando por aqui')
+            falar('até a próxima!')
             break
