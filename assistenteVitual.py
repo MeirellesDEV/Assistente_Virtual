@@ -8,21 +8,20 @@ texto_fala = py.init()
 #variáveis de controle
 text_mode = False #modo texto, se for verdadeiro, irá alternar a fala do microfone para modo de teclado
 
+bot_name = 'bacaxinho' #nome do bot
+
+
 def falar(audio):
+    print(audio) #print do que o robo falar, para funções de debug
+
 
     texto_fala.setProperty("rate", 155)
     texto_fala.say(audio)
     texto_fala.runAndWait()
 
-# falar("isso ae")
-
-
 def tempo():
     Tempo = dt.datetime.now().strftime("%I:%M")
     falar("Agora são: " + Tempo)
-
-# tempo()
-
 
 def data():
     meses = {'1':'janeiro','2':'fevereiro','3':'março','4':'abril','5':'maio','6':'junho','7':'julho','8':'agosto','9':'setembro','10':'outubro','11':'novembro','12':'dezembro'}
@@ -32,9 +31,6 @@ def data():
 
     falar("A data atual é: ")
     falar(dia + " de " + meses[mes] + " de " + ano)
-
-# data()
-
 
 def saudacao():
 
@@ -53,12 +49,12 @@ def saudacao():
 
     falar("Bacaxinho a sua disposição! Lance a braba!")
 
-# saudacao()
-
 def textMode(condition):
+    global text_mode
     text_mode = condition
 
 
+#mic settings
 def microfone():
     r = sr.Recognizer()
 
@@ -80,7 +76,6 @@ def microfone():
 
     return comando
 
-# microfone()
 
 
 if __name__ == "__main__":
@@ -121,6 +116,8 @@ if __name__ == "__main__":
             falar('iniciando modo de fala')
             textMode(False)
             
+        elif 'bom dia' in comando:
+            falar('bom dia campeão')
 
         elif 'finalizar' in comando:
             falar('Estamos finalizando por aqui')
