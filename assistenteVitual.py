@@ -47,7 +47,7 @@ def saudacao():
     # else:
     #     falar("Boa noite mestre-chan!")
 
-    falar("Bacaxinho a sua disposição! Lance a braba!")
+    falar(bot_name+" a sua disposição! Lance a braba!")
 
 def textMode(condition):
     global text_mode
@@ -79,7 +79,7 @@ def microfone():
 
 
 if __name__ == "__main__":
-    #saudacao()
+    saudacao()
 
     while True:
         print("Escutando...")
@@ -118,6 +118,9 @@ if __name__ == "__main__":
             
         elif 'bom dia' in comando:
             falar('bom dia campeão')
+
+        elif 'quem é você' in comando:
+            falar('Eu sou o '+ bot_name +' e é um prazer em conhecer você')
 
         elif 'finalizar' in comando:
             falar('Estamos finalizando por aqui')
