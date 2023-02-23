@@ -6,8 +6,15 @@ import openai as op
 
 texto_fala = py.init()
 
+#variáveis de controle
+text_mode = False #modo texto, se for verdadeiro, irá alternar a fala do microfone para modo de teclado
+
+bot_name = 'bacaxinho' #nome do bot
+
 
 def falar(audio):
+    print(audio) #print do que o robo falar, para funções de debug
+
 
     rate = texto_fala.getProperty('rate') 
     texto_fala.setProperty(rate, 120)
@@ -21,28 +28,22 @@ def falar(audio):
     texto_fala.say(audio)
     texto_fala.runAndWait()
 
-#falar("isso ae")
 
 def tempo():
     Tempo = dt.datetime.now().strftime("%I:%M")
     falar("Agora são: " + Tempo)
 
-# tempo()
-
-
 def data():
+    meses = {'1':'janeiro','2':'fevereiro','3':'março','4':'abril','5':'maio','6':'junho','7':'julho','8':'agosto','9':'setembro','10':'outubro','11':'novembro','12':'dezembro'}
     ano = str(dt.datetime.now().year)
     mes = str(dt.datetime.now().month)
     dia = str(dt.datetime.now().day)
 
     falar("A data atual é: ")
-    falar(dia + " do " + mes + " de " + ano)
-
-# data()
 
 def saudacao():
 
-    falar("Olá poderossimo Mago. Bem vindo de volta!")
+    falar("Olá poderosíssimo Mago. Bem vindo de volta!")
     # tempo()
     # data()
 
@@ -55,9 +56,12 @@ def saudacao():
     # else:
     #     falar("Boa noite mestre-chan!")
 
-    falar("Bacaxinho a sua disposição! Lance a braba!")
+    falar(bot_name+" a sua disposição! Lance a braba!")
 
-# saudacao()
+def textMode(condition):
+    global text_mode
+    text_mode = condition
+
 
 def microfone():
     r = sr.Recognizer()
@@ -80,7 +84,6 @@ def microfone():
 
     return comando
 
-# microfone()
 
 def openia():
     
@@ -113,24 +116,47 @@ if __name__ == "__main__":
     while True:
         print("Escutando...")
 
-        comando = microfone().lower()
+        #recebendo o input
+        if text_mode is True:
+            print('digite alguma coisa: ')
+            comando = input('>> ')
+        else:
+            comando = microfone().lower()
 
-        if 'como você está' in comando:
+        #comando de saudação
+        if 'como você está' in comando: 
             falar('Estou bem se você estiver bem meu mestre')
             falar('O que eu posso fazer para satisfaze-lo, mestre')
 
-        elif 'hora' in comando:
+        elif 'hora' in comando: #comando que fala aa hora
             tempo()
 
-        elif 'data' in comando:
+        elif 'data' in comando or 'dia é hoje' in comando: #comando que diz a data
             data()
 
-        elif 'navegador' in comando:
+        elif 'navegador' in comando: #comando que abre o navegador
             os.system("start Chrome.exe")
+        
+        elif 'melhor time' in comando:
+            falar('O melhor time certamente é o corinthians')
+        
+        elif 'modo texto' in comando:
+            falar('iniciando modo texto')
+            textMode(True)
+        
+        elif 'modo fala' in comando:
+            falar('iniciando modo de fala')
+            textMode(False)
+            
+        elif 'bom dia' in comando:
+            falar('bom dia campeão')
+
+        elif 'quem é você' in comando:
+            falar('Eu sou o '+ bot_name +' e é um prazer em conhecer você')
 
         elif 'pesquisar por' in comando:
             openia()
 
         elif 'finalizar' in comando:
-            falar('Estamos finalizando por aqui')
+            falar('até a próxima!')
             break
