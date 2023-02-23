@@ -2,6 +2,7 @@ import pyttsx3 as py
 import datetime as dt
 import speech_recognition as sr
 import os
+import openai as op
 
 texto_fala = py.init()
 
@@ -15,9 +16,18 @@ def falar(audio):
     print(audio) #print do que o robo falar, para funções de debug
 
 
-    texto_fala.setProperty("rate", 155)
+    rate = texto_fala.getProperty('rate') 
+    texto_fala.setProperty(rate, 120)
+
+    volume = texto_fala.getProperty('volume')                             
+    texto_fala.setProperty(volume, 1.0)
+
+    voices = texto_fala.getProperty('voices')
+    texto_fala.setProperty('voice', voices[0].id)
+
     texto_fala.say(audio)
     texto_fala.runAndWait()
+
 
 def tempo():
     Tempo = dt.datetime.now().strftime("%I:%M")
@@ -30,7 +40,6 @@ def data():
     dia = str(dt.datetime.now().day)
 
     falar("A data atual é: ")
-    falar(dia + " de " + meses[mes] + " de " + ano)
 
 def saudacao():
 
@@ -54,7 +63,6 @@ def textMode(condition):
     text_mode = condition
 
 
-#mic settings
 def microfone():
     r = sr.Recognizer()
 
@@ -77,6 +85,30 @@ def microfone():
     return comando
 
 
+def openia():
+    
+    #op.api_key = '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'
+
+    model_engine = 'text-davinci-003'
+
+    while True:
+        #comando = microfone().lower()
+
+        prompt = input('Escreva algo: ')
+
+        completion = op.Completion.create(
+            engine = model_engine,
+            prompt = prompt,
+            max_tokens = 1024,
+            temperature = 0.5
+        )
+
+        response = completion.choices[0].text
+        falar(response)
+        #print(response)
+
+        if 'sair' in prompt:
+            break
 
 if __name__ == "__main__":
     saudacao()
@@ -121,6 +153,9 @@ if __name__ == "__main__":
 
         elif 'quem é você' in comando:
             falar('Eu sou o '+ bot_name +' e é um prazer em conhecer você')
+
+        elif 'pesquisar por' in comando:
+            openia()
 
         elif 'finalizar' in comando:
             falar('até a próxima!')
