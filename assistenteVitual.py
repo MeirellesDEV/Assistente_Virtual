@@ -2,7 +2,11 @@ import pyttsx3 as py
 import datetime as dt
 import speech_recognition as sr
 import os
+import webbrowser as wb
 import openai as op
+
+# import spotipy 
+# from spotipy.oauth2 import SpotifyOAuth
 
 texto_fala = py.init()
 
@@ -85,7 +89,7 @@ def microfone():
     return comando
 
 
-def openia():
+def openia(fala):
     
     #op.api_key = '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'
 
@@ -94,7 +98,7 @@ def openia():
     while True:
         #comando = microfone().lower()
 
-        prompt = input('Escreva algo: ')
+        prompt = fala
 
         completion = op.Completion.create(
             engine = model_engine,
@@ -109,6 +113,26 @@ def openia():
 
         if 'sair' in prompt:
             break
+
+# def spotify(fala):
+#     os.environ['SPOTIPY_CLIENT_ID'] = '2f71d915206e4de1a9cb51187703e032'
+#     os.environ['SPOTIPY_CLIENT_SECRET'] = 'c61a6544a9f143bf99c1e18462040e97'
+#     os.environ['SPOTIPY_REDIRECT_URI'] = 'https://example.com/callback'
+        
+#     scope = 'user-read-playback-state, user-modify-playback-state'
+#     sp = spotipy.Spotify(client_credentials_manager=SpotifyOAuth(scope=scope))
+
+#     query = fala.replace('spotfy play', '').strip()
+
+#     results = sp.search(query,1,0,"track")
+
+#     nome_artista = results['tracks']['items'][0]['artists'][0]['name']
+#     nome_musica = results['tracks']['items'][0]['name']
+
+#     track_url = results['tracks']['items'][0]['uri']
+#     falar(f'Playing {nome_musica} by {nome_artista}')
+
+#     sp.start_playback(uris=[track_url])
 
 if __name__ == "__main__":
     saudacao()
@@ -155,7 +179,13 @@ if __name__ == "__main__":
             falar('Eu sou o '+ bot_name +' e é um prazer em conhecer você')
 
         elif 'pesquisar por' in comando:
-            openia()
+            openia(comando)
+
+        elif 'código fonte' in comando:
+            wb.open('https://github.com/MeirellesDEV/Assistente_Virtual')
+
+        # elif 'spotify play' in comando:
+        #     spotify(comando)
 
         elif 'finalizar' in comando:
             falar('até a próxima!')
