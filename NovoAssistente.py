@@ -193,7 +193,6 @@ def navegador():
 
 def melhortime():
     falar('O melhor time certamente é o corinthians')
-    return comando
 
 
 def quemsoueu():
@@ -227,9 +226,15 @@ def chamou(list,command):
         if i in command: return True
     return False
 
-def endapp():
-    falar('até a próxima')
-    exit()
+def recebeInput():
+    if text_mode is True:
+        print('digite alguma coisa: ')
+        comando = input('>> ')
+    else:
+        comando = microfone().lower()
+
+    return comando
+
 
 
 
@@ -277,7 +282,7 @@ def awake():
 def novoapelido():
     global AWAKE_COMMANDS
     falar('Como você quer me chamar a partir de hoje?')
-    comando = microfone().lower()
+    comando = recebeInput()
 
     comando.partition(' ')
     AWAKE_COMMANDS.append(comando)
@@ -289,7 +294,7 @@ def novonome():
 
     falar('como você quer que eu me chame?')
 
-    novo_nome = microfone().lower()
+    novo_nome = recebeInput()
 
     bot_name = novo_nome
 
@@ -319,21 +324,17 @@ if __name__ == "__main__":
 
         print('aguardando chamda...')
         #aguardando chamada
-        comando = microfone().lower()
+        comando = recebeInput()
         if chamou(AWAKE_COMMANDS, comando): 
             saudacao()
-            #awake()
+            awake()
 
         #ao chamar
         while acordado:
             print("Escutando...")
 
             # recebendo o input
-            if text_mode is True:
-                print('digite alguma coisa: ')
-                comando = input('>> ')
-            else:
-                comando = microfone().lower()
+            comando =recebeInput()
 
             if searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
                 # executando a função
