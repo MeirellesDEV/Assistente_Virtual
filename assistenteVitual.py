@@ -185,18 +185,6 @@ def data():
 def saudacao():
 
     falar("Olá poderosíssimo Mago. Bem vindo de volta!")
-    # tempo()
-    # data()
-
-    # hora = dt.datetime.now().hour
-
-    # if hora >= 6 and hora <= 12:
-    #     falar("Bom dia o mais pika dos magos!")
-    # elif hora > 12 and hora <= 18:
-    #     falar("Boa tarde meu querido poderoso mestre!")
-    # else:
-    #     falar("Boa noite mestre-chan!")
-
     falar(bot_name+" a sua disposição! Lance a braba!")
 
 def comoestou():
@@ -211,24 +199,12 @@ def melhortime():
     falar('O melhor time certamente é o corinthians')
     return comando
 
-def openai(comando):
-    
-    op.api_key = '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'
-
-    model_engine = 'text-davinci-003'
-
 def quemsoueu():
     falar('Eu sou o ' + bot_name + ' e é um prazer em conhecer você')
-    prompt = comando
 
 def codigofonte():
     wb.open('https://github.com/MeirellesDEV/Assistente_Virtual')
 
-
-        response = completion.choices[0].text
-        falar(response)
-        break;
-        #print(response)
         
 # variáveis de comandos
 DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador,
@@ -313,8 +289,6 @@ if __name__ == "__main__":
         if searchKey(DICT_COMMANDS,KEYWORDS,comando) != -1 :
             #executando a função
             DICT_COMMANDS[KEYWORDS[searchKey(DICT_COMMANDS,KEYWORDS,comando)]]()
-        else:
-            openai(comando)
 
         if searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
             DICT_COMMANDS[KEYWORDS[searchKey(
