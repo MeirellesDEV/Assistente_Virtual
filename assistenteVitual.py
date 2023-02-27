@@ -16,11 +16,6 @@ texto_fala = py.init()
 text_mode = False
 bot_name = 'bacaxinho'  # nome do bot
 
-# variáveis de controle
-# modo texto, se for verdadeiro, irá alternar a fala do microfone para modo de teclado
-text_mode = False
-bot_name = 'bacaxinho'  # nome do bot
-
 # funcoes de configuração
 
 # funcoes de configuração
@@ -189,14 +184,14 @@ def codigofonte():
     wb.open('https://github.com/MeirellesDEV/Assistente_Virtual')
 
 def apresentacao():
-    falar('Digas, o Pinaculo do Design')
     wb.open('https://github.com/RodrigoTheDev')
+    falar('Digas, o Pinaculo do Design')
 
-    falar('Meirelles, a Sacerdotisa do Front')
     wb.open('https://github.com/MeirellesDEV')
+    falar('Meirelles, a Sacerdotisa do Front')
 
-    falar('João, o Redentor das APIs')
     wb.open('https://github.com/JGsilvaDev')
+    falar('Oliveiras, o Redentor das APIs')
 
 
 # variáveis de comandos
@@ -261,9 +256,9 @@ def quemsoueu():
 
 
 # variáveis de comandos
-DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador,
-                 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 
-                 'finalizar': endapp, 'apresentação': apresentacao}
+DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador, 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 'finalizar': endapp,'finaliza':endapp,'finalize':endapp,'desligar':endapp, 'apresentação': apresentacao,'spotify':spotify, 'dormir':awake,'dormi':awake, 'novo apelido':novoapelido, 'quais apelidos': listarApelidos, 'que apelidos': listarApelidos, 'novo nome':novonome}
+
+AWAKE_COMMANDS = ['bacaxinho','abacaxi','cachinho','cachimbo','maluco','acorda porra', 'zé ruela', 'cabeça de lata']
 
 KEYWORDS = list(DICT_COMMANDS.keys())
 
