@@ -1,7 +1,6 @@
 bot-venv
-<<<<<<< Updated upstream
-=======
 testes
 otherversions
->>>>>>> Stashed changes
 requirements.txt
+ambientepython
+.cache
