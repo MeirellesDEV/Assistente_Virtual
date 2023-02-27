@@ -16,6 +16,12 @@ texto_fala = py.init()
 text_mode = False
 bot_name = 'bacaxinho'  # nome do bot
 
+# variáveis de controle
+# modo texto, se for verdadeiro, irá alternar a fala do microfone para modo de teclado
+text_mode = False
+acordado = False
+bot_name = 'bacaxinho'  # nome do bot
+
 # funcoes de configuração
 
 # funcoes de configuração
@@ -71,26 +77,27 @@ def microfone():
 
 def openia(fala):
 
+    falar('Pesquisa por OPENAI desativada por enquanto...')
     # op.api_key = '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'
 
-    model_engine = 'text-davinci-003'
+    # model_engine = 'text-davinci-003'
 
-    while True:
-        prompt = fala
+    # while True:
+    #     prompt = fala
 
-        completion = op.Completion.create(
-            engine=model_engine,
-            prompt=prompt,
-            max_tokens=1024,
-            temperature=0.5
-        )
+    #     completion = op.Completion.create(
+    #         engine=model_engine,
+    #         prompt=prompt,
+    #         max_tokens=1024,
+    #         temperature=0.5
+    #     )
 
-        response = completion.choices[0].text
-        falar(response)
-        # print(response)
+    #     response = completion.choices[0].text
+    #     falar(response)
+    #     # print(response)
 
-        if 'sair' in prompt:
-            break
+    #     if 'sair' in prompt:
+    #         break
 
 
 def searchKey(dc, keywords, comando):
@@ -101,6 +108,20 @@ def searchKey(dc, keywords, comando):
 
     return -1
 
+def ouvir():
+    print('escutando microfone...')
+    listener = sr.Recognizer()
+    sr.Microphone.list_microphone_names()
+
+    try:
+        with sr.Microphone(device_index=1) as source:
+            print('Listening...')
+            voice = listener.listen(source)
+            command = listener.recognize_google(voice, language='pt-PT')
+            print(command)
+            return command
+    except:
+        return 'No Sound'
 
 def spotify():
 
@@ -132,7 +153,6 @@ def spotify():
             engine.runAndWait()
 
             sp.start_playback(uris=[track_uri])
-
 
 def endapp():
     falar('até a próxima')
@@ -173,7 +193,6 @@ def navegador():
 
 def melhortime():
     falar('O melhor time certamente é o corinthians')
-    return comando
 
 
 def quemsoueu():
@@ -184,22 +203,14 @@ def codigofonte():
     wb.open('https://github.com/MeirellesDEV/Assistente_Virtual')
 
 def apresentacao():
-    wb.open('https://github.com/RodrigoTheDev')
     falar('Digas, o Pinaculo do Design')
+    wb.open('https://github.com/RodrigoTheDev')
 
-    wb.open('https://github.com/MeirellesDEV')
     falar('Meirelles, a Sacerdotisa do Front')
+    wb.open('https://github.com/MeirellesDEV')
 
+    falar('João, o Redentor das APIs')
     wb.open('https://github.com/JGsilvaDev')
-    falar('Oliveiras, o Redentor das APIs')
-
-
-# variáveis de comandos
-DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador,
-                 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 
-                 'código fonte': codigofonte, 'finalizar': endapp, 'spotify': spotify}
-
-KEYWORDS = list(DICT_COMMANDS.keys())
 
 
 def searchKey(dc, keywords, comando):
@@ -210,14 +221,24 @@ def searchKey(dc, keywords, comando):
 
     return -1
 
+def chamou(list,command):
+    for i in list:
+        if i in command: return True
+    return False
 
-def endapp():
-    falar('até a próxima')
-    exit()
+def recebeInput():
+    if text_mode is True:
+        print('digite alguma coisa: ')
+        comando = input('>> ')
+    else:
+        comando = microfone().lower()
+
+    return comando
+
+
+
 
 # funcoes de comandos
-
-
 def tempo():
     Tempo = dt.datetime.now().strftime("%I:%M")
     falar("Agora são: " + Tempo)
@@ -254,6 +275,39 @@ def melhortime():
 def quemsoueu():
     falar('Eu sou o ' + bot_name + ' e é um prazer em conhecer você')
 
+def awake():
+    global acordado
+    acordado = not acordado
+    
+def novoapelido():
+    global AWAKE_COMMANDS
+    falar('Como você quer me chamar a partir de hoje?')
+    comando = recebeInput()
+
+    comando.partition(' ')
+    AWAKE_COMMANDS.append(comando)
+
+    falar('Muito bem, '+comando+' foi adicionado como um novo apelido')
+
+def novonome():
+    global bot_name
+
+    falar('como você quer que eu me chame?')
+
+    novo_nome = recebeInput()
+
+    bot_name = novo_nome
+
+    falar('nome alterado com sucesso')
+
+
+def listarApelidos():
+    global AWAKE_COMMANDS
+
+    falar('As pessoas me chamam de: ')
+    for i in AWAKE_COMMANDS:
+        falar(i)
+
 
 # variáveis de comandos
 DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador, 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 'finalizar': endapp,'finaliza':endapp,'finalize':endapp,'desligar':endapp, 'apresentação': apresentacao,'spotify':spotify, 'dormir':awake,'dormi':awake, 'novo apelido':novoapelido, 'quais apelidos': listarApelidos, 'que apelidos': listarApelidos, 'novo nome':novonome}
@@ -264,30 +318,26 @@ KEYWORDS = list(DICT_COMMANDS.keys())
 
 if __name__ == "__main__":
 
-    if microfone().lower() == 'bacaxinho' : 
-        saudacao()
 
-        while True:
+    #loop principal
+    while True:
+
+        print('aguardando chamda...')
+        #aguardando chamada
+        comando = recebeInput()
+        if chamou(AWAKE_COMMANDS, comando): 
+            saudacao()
+            awake()
+
+        #ao chamar
+        while acordado:
             print("Escutando...")
 
             # recebendo o input
-            if text_mode is True:
-                print('digite alguma coisa: ')
-                comando = input('>> ')
-            else:
-                comando = microfone().lower()
+            comando =recebeInput()
 
             if searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
                 # executando a função
-                DICT_COMMANDS[KEYWORDS[searchKey(
-                    DICT_COMMANDS, KEYWORDS, comando)]]()
-
-            if searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
-                DICT_COMMANDS[KEYWORDS[searchKey(
-                    DICT_COMMANDS, KEYWORDS, comando)]]()
-
-            elif 'spotify' in comando:
-                spotify()
-
+                DICT_COMMANDS[KEYWORDS[searchKey( DICT_COMMANDS, KEYWORDS, comando)]]()
             else:
                 openia(comando)
