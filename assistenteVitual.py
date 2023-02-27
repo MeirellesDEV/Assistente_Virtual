@@ -188,6 +188,16 @@ def quemsoueu():
 def codigofonte():
     wb.open('https://github.com/MeirellesDEV/Assistente_Virtual')
 
+def apresentacao():
+    falar('Digas, o Pinaculo do Design')
+    wb.open('https://github.com/RodrigoTheDev')
+
+    falar('Meirelles, a Sacerdotisa do Front')
+    wb.open('https://github.com/MeirellesDEV')
+
+    falar('João, o Redentor das APIs')
+    wb.open('https://github.com/JGsilvaDev')
+
 
 # variáveis de comandos
 DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador,
@@ -252,34 +262,37 @@ def quemsoueu():
 
 # variáveis de comandos
 DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador,
-                 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 'finalizar': endapp}
+                 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 
+                 'finalizar': endapp, 'apresentação': apresentacao}
 
 KEYWORDS = list(DICT_COMMANDS.keys())
 
 if __name__ == "__main__":
-    saudacao()
 
-    while True:
-        print("Escutando...")
+    if microfone().lower() == 'bacaxinho' : 
+        saudacao()
 
-        # recebendo o input
-        if text_mode is True:
-            print('digite alguma coisa: ')
-            comando = input('>> ')
-        else:
-            comando = microfone().lower()
+        while True:
+            print("Escutando...")
 
-        if searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
-            # executando a função
-            DICT_COMMANDS[KEYWORDS[searchKey(
-                DICT_COMMANDS, KEYWORDS, comando)]]()
+            # recebendo o input
+            if text_mode is True:
+                print('digite alguma coisa: ')
+                comando = input('>> ')
+            else:
+                comando = microfone().lower()
 
-        if searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
-            DICT_COMMANDS[KEYWORDS[searchKey(
-                DICT_COMMANDS, KEYWORDS, comando)]]()
+            if searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
+                # executando a função
+                DICT_COMMANDS[KEYWORDS[searchKey(
+                    DICT_COMMANDS, KEYWORDS, comando)]]()
 
-        elif 'spotify' in comando:
-            spotify()
+            if searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
+                DICT_COMMANDS[KEYWORDS[searchKey(
+                    DICT_COMMANDS, KEYWORDS, comando)]]()
 
-        else:
-            openia(comando)
+            elif 'spotify' in comando:
+                spotify()
+
+            else:
+                openia(comando)
