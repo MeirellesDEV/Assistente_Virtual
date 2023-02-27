@@ -214,14 +214,6 @@ def apresentacao():
     wb.open('https://github.com/JGsilvaDev')
 
 
-# variáveis de comandos
-DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador,
-                 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 
-                 'código fonte': codigofonte, 'finalizar': endapp, 'spotify': spotify}
-
-KEYWORDS = list(DICT_COMMANDS.keys())
-
-
 def searchKey(dc, keywords, comando):
 
     for i in keywords:
@@ -281,12 +273,39 @@ def quemsoueu():
 def awake():
     global acordado
     acordado = not acordado
+    
+def novoapelido():
+    global AWAKE_COMMANDS
+    falar('Como você quer me chamar a partir de hoje?')
+    comando = microfone().lower()
+
+    comando.partition(' ')
+    AWAKE_COMMANDS.append(comando)
+
+    falar('Muito bem, '+comando+' foi adicionado como um novo apelido')
+
+def novonome():
+    global bot_name
+
+    falar('como você quer que eu me chame?')
+
+    novo_nome = microfone().lower()
+
+    bot_name = novo_nome
+
+    falar('nome alterado com sucesso')
+
+
+def listarApelidos():
+    global AWAKE_COMMANDS
+
+    falar('As pessoas me chamam de: ')
+    for i in AWAKE_COMMANDS:
+        falar(i)
 
 
 # variáveis de comandos
-DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador,
-                 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 
-                 'finalizar': endapp,'finaliza':endapp,'finalize':endapp,'desligar':endapp, 'apresentação': apresentacao,'spotify':spotify, 'dormir':awake,'dormi':awake}
+DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador, 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 'finalizar': endapp,'finaliza':endapp,'finalize':endapp,'desligar':endapp, 'apresentação': apresentacao,'spotify':spotify, 'dormir':awake,'dormi':awake, 'novo apelido':novoapelido, 'quais apelidos': listarApelidos, 'que apelidos': listarApelidos, 'novo nome':novonome}
 
 AWAKE_COMMANDS = ['bacaxinho','abacaxi','cachinho','cachimbo','maluco','acorda porra', 'zé ruela', 'cabeça de lata']
 
