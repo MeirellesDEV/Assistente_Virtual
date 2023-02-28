@@ -8,6 +8,8 @@ import openai as op
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
+import wikipedia as wk
+
 texto_fala = py.init()
 
 # variáveis de controle
@@ -131,8 +133,6 @@ def spotify():
     engine = py.init()
     engine.runAndWait()
 
-
-
     falar('Qual musica você deseja campeão?')
 
     command = recebeInput()
@@ -207,6 +207,26 @@ def apresentacao():
 
     falar('João, o Redentor das APIs')
     wb.open('https://github.com/JGsilvaDev')
+
+def wikipedia():
+    wikipedia.set_lang("pt-BR")
+    s = recebeInput()
+    l = wikipedia.search(str(s))
+
+    for i in l:
+        falar(wikipedia.summary(i, sentences=1))
+
+def google(comando):
+    search_term = comando.replace("google", "")
+    url = 'https//www.google.com/search?q=' + search_term
+    wb.get().open(url)
+    falar("Aqui está o que você pesquisou" + search_term)
+
+def youtube(comando):
+    search_term = comando.replace("youtube", "")
+    url = 'https//www.youtube.com/results?search_query=' + search_term
+    wb.get().open(url)
+    falar("Aqui está o que você pesquisou" + search_term)
 
 
 def searchKey(dc, keywords, comando):
@@ -310,8 +330,13 @@ def listarApelidos():
 
 
 # variáveis de comandos
-DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador, 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 'finalizar': endapp, 'finaliza': endapp,
-                 'finalize': endapp, 'desligar': endapp, 'apresentação': apresentacao, 'spotify': spotify, 'dormir': awake, 'dormi': awake, 'novo apelido': novoapelido, 'quais apelidos': listarApelidos, 'que apelidos': listarApelidos, 'novo nome': novonome}
+DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 
+                 'navegador': navegador, 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 
+                 'quem é você': quemsoueu, 'finalizar': endapp, 'finaliza': endapp, 'finalize': endapp, 
+                 'desligar': endapp, 'apresentação': apresentacao, 'spotify': spotify, 'dormir': awake, 
+                 'dormi': awake, 'novo apelido': novoapelido, 'quais apelidos': listarApelidos, 
+                 'que apelidos': listarApelidos, 'novo nome': novonome, 'wikipedia' : wikipedia,
+                 'youtube' : youtube, 'google' : google}
 
 AWAKE_COMMANDS = ['bacaxinho', 'abacaxi', 'cachinho', 'cachimbo',
                   'maluco', 'acorda porra', 'zé ruela', 'cabeça de lata']
