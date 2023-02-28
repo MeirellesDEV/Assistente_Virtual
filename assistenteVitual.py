@@ -335,8 +335,7 @@ DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'di
                  'quem é você': quemsoueu, 'finalizar': endapp, 'finaliza': endapp, 'finalize': endapp, 
                  'desligar': endapp, 'apresentação': apresentacao, 'spotify': spotify, 'dormir': awake, 
                  'dormi': awake, 'novo apelido': novoapelido, 'quais apelidos': listarApelidos, 
-                 'que apelidos': listarApelidos, 'novo nome': novonome, 'wikipedia' : wikipedia,
-                 'youtube' : youtube, 'google' : google}
+                 'que apelidos': listarApelidos, 'novo nome': novonome, 'wikipedia' : wikipedia}
 
 AWAKE_COMMANDS = ['bacaxinho', 'abacaxi', 'cachinho', 'cachimbo',
                   'maluco', 'acorda porra', 'zé ruela', 'cabeça de lata']
@@ -366,5 +365,10 @@ if __name__ == "__main__":
                 # executando a função
                 DICT_COMMANDS[KEYWORDS[searchKey(
                     DICT_COMMANDS, KEYWORDS, comando)]]()
+                
+            elif 'youtube' in comando:
+                youtube(comando)
+            elif 'google' in comando:
+                google(comando)
             else:
                 openia(comando)
