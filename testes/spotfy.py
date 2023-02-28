@@ -30,8 +30,8 @@ sp = spotipy.Spotify(client_credentials_manager=SpotifyOAuth(scope=scope))
 query = 'Uptown Funk'
 results = sp.search(query, 1, 0, "track")
 
-# track_url = results['tracks']['items'][0]['uri']
-# sp.start_playback(uris=[track_url])
+track_url = results['tracks']['items'][0]['uri']
+sp.start_playback(uris=[track_url])
 
 
 # para colocar dentro da assistente virtual

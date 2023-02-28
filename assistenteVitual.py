@@ -10,15 +10,9 @@ from spotipy.oauth2 import SpotifyOAuth
 
 texto_fala = py.init()
 
-
 # variáveis de controle
 # modo texto, se for verdadeiro, irá alternar a fala do microfone para modo de teclado
-text_mode = False
-bot_name = 'bacaxinho'  # nome do bot
-
-# variáveis de controle
-# modo texto, se for verdadeiro, irá alternar a fala do microfone para modo de teclado
-text_mode = False
+text_mode = True
 acordado = False
 bot_name = 'bacaxinho'  # nome do bot
 
@@ -108,6 +102,7 @@ def searchKey(dc, keywords, comando):
 
     return -1
 
+
 def ouvir():
     print('escutando microfone...')
     listener = sr.Recognizer()
@@ -123,6 +118,7 @@ def ouvir():
     except:
         return 'No Sound'
 
+
 def spotify():
 
     os.environ['SPOTIPY_CLIENT_ID'] = '<d42fde4f8111483087e47122e353b9f2>'
@@ -135,24 +131,23 @@ def spotify():
     engine = py.init()
     engine.runAndWait()
 
-    while True:
-        falar('Qual musica você deseja campeão?')
 
-        command = microfone()
 
-        if 'sair' in command:
-            break
-        else:
-            results = sp.search(command, 1, 0, "track")
+    falar('Qual musica você deseja campeão?')
 
-            nome_artista = results['tracks']['items'][0]['artists'][0]['name']
-            nome_musica = results['tracks']['items'][0]['name']
-            track_uri = results['tracks']['items'][0]['uri']
+    command = recebeInput()
 
-            engine.say(f'Tocando {nome_musica} by {nome_artista}')
-            engine.runAndWait()
+    results = sp.search(command, 1, 0, "track")
 
-            sp.start_playback(uris=[track_uri])
+    nome_artista = results['tracks']['items'][0]['artists'][0]['name']
+    nome_musica = results['tracks']['items'][0]['name']
+    track_uri = results['tracks']['items'][0]['uri']
+
+    engine.say(f'Tocando {nome_musica} by {nome_artista}')
+    engine.runAndWait()
+
+    sp.start_playback(uris=[track_uri])
+
 
 def endapp():
     falar('até a próxima')
@@ -202,6 +197,7 @@ def quemsoueu():
 def codigofonte():
     wb.open('https://github.com/MeirellesDEV/Assistente_Virtual')
 
+
 def apresentacao():
     falar('Digas, o Pinaculo do Design')
     wb.open('https://github.com/RodrigoTheDev')
@@ -221,10 +217,13 @@ def searchKey(dc, keywords, comando):
 
     return -1
 
-def chamou(list,command):
+
+def chamou(list, command):
     for i in list:
-        if i in command: return True
+        if i in command:
+            return True
     return False
+
 
 def recebeInput():
     if text_mode is True:
@@ -234,8 +233,6 @@ def recebeInput():
         comando = microfone().lower()
 
     return comando
-
-
 
 
 # funcoes de comandos
@@ -275,10 +272,12 @@ def melhortime():
 def quemsoueu():
     falar('Eu sou o ' + bot_name + ' e é um prazer em conhecer você')
 
+
 def awake():
     global acordado
     acordado = not acordado
-    
+
+
 def novoapelido():
     global AWAKE_COMMANDS
     falar('Como você quer me chamar a partir de hoje?')
@@ -288,6 +287,7 @@ def novoapelido():
     AWAKE_COMMANDS.append(comando)
 
     falar('Muito bem, '+comando+' foi adicionado como um novo apelido')
+
 
 def novonome():
     global bot_name
@@ -310,34 +310,36 @@ def listarApelidos():
 
 
 # variáveis de comandos
-DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador, 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 'finalizar': endapp,'finaliza':endapp,'finalize':endapp,'desligar':endapp, 'apresentação': apresentacao,'spotify':spotify, 'dormir':awake,'dormi':awake, 'novo apelido':novoapelido, 'quais apelidos': listarApelidos, 'que apelidos': listarApelidos, 'novo nome':novonome}
+DICT_COMMANDS = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador, 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 'finalizar': endapp, 'finaliza': endapp,
+                 'finalize': endapp, 'desligar': endapp, 'apresentação': apresentacao, 'spotify': spotify, 'dormir': awake, 'dormi': awake, 'novo apelido': novoapelido, 'quais apelidos': listarApelidos, 'que apelidos': listarApelidos, 'novo nome': novonome}
 
-AWAKE_COMMANDS = ['bacaxinho','abacaxi','cachinho','cachimbo','maluco','acorda porra', 'zé ruela', 'cabeça de lata']
+AWAKE_COMMANDS = ['bacaxinho', 'abacaxi', 'cachinho', 'cachimbo',
+                  'maluco', 'acorda porra', 'zé ruela', 'cabeça de lata']
 
 KEYWORDS = list(DICT_COMMANDS.keys())
 
 if __name__ == "__main__":
 
-
-    #loop principal
+    # loop principal
     while True:
 
         print('aguardando chamda...')
-        #aguardando chamada
+        # aguardando chamada
         comando = recebeInput()
-        if chamou(AWAKE_COMMANDS, comando): 
+        if chamou(AWAKE_COMMANDS, comando):
             saudacao()
             awake()
 
-        #ao chamar
+        # ao chamar
         while acordado:
             print("Escutando...")
 
             # recebendo o input
-            comando =recebeInput()
+            comando = recebeInput()
 
             if searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
                 # executando a função
-                DICT_COMMANDS[KEYWORDS[searchKey( DICT_COMMANDS, KEYWORDS, comando)]]()
+                DICT_COMMANDS[KEYWORDS[searchKey(
+                    DICT_COMMANDS, KEYWORDS, comando)]]()
             else:
                 openia(comando)
