@@ -9,7 +9,7 @@ DICT_COMMANDS = {'como você está': fc.comoestou, 'hora': fc.tempo, 'data': fc.
                  'quais apelidos': fc.listarApelidos, 'que apelidos': fc.listarApelidos, 'novo nome': fc.novonome, 
                  'wikipedia' : fc.wikipedia}
 
-AWAKE_COMMANDS = ['bacaxinho', 'abacaxi', 'cachinho', 'cachimbo',
+AWAKE_COMMANDS = ['bacaxinho', 'abacaxi', 'cachinho', 'cachimbo', 'ximbinha',
                   'maluco', 'acorda porra', 'zé ruela', 'cabeça de lata']
 
 KEYWORDS = list(DICT_COMMANDS.keys())
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     # loop principal
     while True:
 
-        print('aguardando chamda...')
+        print('Aguardando chamada...')
         # aguardando chamada
         comando = fc.recebeInput()
         if fc.chamou(AWAKE_COMMANDS, comando):

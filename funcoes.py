@@ -326,14 +326,14 @@ def tradutor(fala):
     }
 
     txt = str(fala.replace('como fala', '').replace('em', '')).split()
-    eng = txt[-1]
+    lang = txt[-1]
 
-    linguagem = str(trans.translate(eng, dest="en").text).lower()
+    idioma = str(trans.translate(lang, dest="en").text).lower()
 
     items = LANGUAGES.items()
 
     for item in items:
-        if(item[1] == linguagem):
+        if(item[1] == idioma):
             codLang = item[0]
 
     txt.pop()                   #retira a linguagem do array
