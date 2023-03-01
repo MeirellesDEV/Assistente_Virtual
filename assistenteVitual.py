@@ -1,13 +1,7 @@
 import funcoes as fc
 
 # variáveis de comandos
-DICT_COMMANDS = {'como você está': fc.comoestou, 'hora': fc.tempo, 'data': fc.data, 'dia é hoje': fc.data, 
-                 'navegador': fc.navegador, 'melhor time': fc.melhortime, 'modo texto': fc.textMode, 
-                 'modo fala': fc.textMode, 'quem é você': fc.quemsoueu, 'finalizar': fc.endapp, 
-                 'finaliza': fc.endapp, 'finalize': fc.endapp, 'desligar': fc.endapp, 'apresentação': fc.apresentacao, 
-                 'spotify': fc.spotify, 'dormir': fc.awake, 'dormi': fc.awake, 'novo apelido': fc.novoapelido, 
-                 'quais apelidos': fc.listarApelidos, 'que apelidos': fc.listarApelidos, 'novo nome': fc.novonome, 
-                 'wikipedia' : fc.wikipedia}
+DICT_COMMANDS = {'como você está': fc.comoestou, 'hora': fc.tempo, 'data': fc.data, 'dia é hoje': fc.data, 'navegador': fc.navegador, 'melhor time': fc.melhortime, 'modo texto': fc.textMode, 'modo fala': fc.textMode, 'quem é você': fc.quemsoueu, 'finalizar': fc.endapp, 'finaliza': fc.endapp, 'finalize': fc.endapp, 'desligar': fc.endapp, 'apresentação': fc.apresentacao, 'spotify': fc.spotify, 'dormir': fc.awake, 'dormi': fc.awake, 'novo apelido': fc.novoapelido, 'quais apelidos': fc.listarApelidos, 'que apelidos': fc.listarApelidos, 'novo nome': fc.novonome, 'wikipedia' : fc.wikipedia}
 
 AWAKE_COMMANDS = ['bacaxinho', 'abacaxi', 'cachinho', 'cachimbo', 'ximbinha',
                   'maluco', 'acorda porra', 'zé ruela', 'cabeça de lata']

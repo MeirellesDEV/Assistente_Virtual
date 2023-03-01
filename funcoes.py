@@ -198,6 +198,7 @@ def apresentacao():
 
 def wikipedia():
     wikipedia.set_lang("pt-BR")
+    falar('O que você quer pesquisar no wikipedia?')
     s = recebeInput()
     l = wikipedia.search(str(s))
 
@@ -238,36 +239,6 @@ def recebeInput():
         comando = microfone().lower()
 
     return comando
-
-def tempo():
-    Tempo = dt.datetime.now().strftime("%I:%M")
-    falar("Agora são: " + Tempo)
-
-def data():
-    meses = {'1': 'janeiro', '2': 'fevereiro', '3': 'março', '4': 'abril', '5': 'maio', '6': 'junho',
-             '7': 'julho', '8': 'agosto', '9': 'setembro', '10': 'outubro', '11': 'novembro', '12': 'dezembro'}
-    ano = str(dt.datetime.now().year)
-    mes = str(dt.datetime.now().month)
-    dia = str(dt.datetime.now().day)
-
-    falar('hoje é '+dia + ' de ' + meses[mes] + ' de ' + ano)
-
-def saudacao():
-    falar("Olá poderosíssimo Mago. Bem vindo de volta!")
-    falar(bot_name+" a sua disposição! Lance a braba!")
-
-def comoestou():
-    falar('Estou bem se você estiver bem meu mestre')
-    falar('O que eu posso fazer para satisfaze-lo, mestre')
-
-def navegador():
-    os.system("start Chrome.exe")
-
-def melhortime():
-    falar('O melhor time certamente é o corinthians')
-
-def quemsoueu():
-    falar('Eu sou o ' + bot_name + ' e é um prazer em conhecer você')
 
 def awake():
     global acordado
