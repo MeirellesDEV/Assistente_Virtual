@@ -42,5 +42,7 @@ if __name__ == "__main__":
                 fc.youtube(comando)
             elif 'google' in comando:
                 fc.google(comando)
+            elif 'como fala' in comando:
+                fc.tradutor(comando)
             else:
                 fc.openia(comando)
