@@ -310,4 +310,4 @@ def tradutor(fala):
     txt.pop()                   #retira a linguagem do array
     conteudo = ' '.join(txt)
 
-    print(trans.translate(conteudo, dest=codLang).text)
+    falar(trans.translate(conteudo, dest=codLang).text)
