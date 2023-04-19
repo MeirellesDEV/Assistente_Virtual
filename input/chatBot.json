@@ -16,5 +16,23 @@
             "raiva": "So se for pra vc",
             "neutro": "Bom dia"
         }
+    },
+    {
+        "question": ["Boa tarde"],
+        "resposta":{
+            "alegria": "Boa tarde com muita alegria",
+            "tristeza": "Ah pode ate ser",
+            "raiva": "So se for pra vc",
+            "neutro": "Boa tarde"
+        }
+    },
+    {
+        "question": ["Boa noite"],
+        "resposta":{
+            "alegria": "Boa noite com muita alegria",
+            "tristeza": "Ah pode ate ser",
+            "raiva": "So se for pra vc",
+            "neutro": "Boa noite"
+        }
     }
 ]

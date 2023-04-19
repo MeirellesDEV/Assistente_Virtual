@@ -77,7 +77,7 @@ Estou com tanta raiva que mal consigo respirar;raiva
 Essa situação me deixa extremamente irritado;raiva
 Minha raiva está transbordando e não consigo controlá-la;raiva
 Estou tão furioso que quase sinto que vou explodir;raiva
-Não posso acreditar que isso está acontecendo, minha raiva é incontrolável;raiva
+Não posso acreditar que isso está acontecendo minha raiva é incontrolável;raiva
 Essa pessoa me fez perder completamente a paciência!;raiva
 Minha raiva é tão forte que me faz querer gritar e quebrar tudo;raiva
 Sinto uma raiva profunda e intensa que me consome por completo;raiva
@@ -169,7 +169,7 @@ estou calmo;neutro
 as coisas são diferentes agora;neutro
 falta muito para terminar;neutro
 temos trabalho a fazer;neutro
-não sei, só sei que foi assim;neutro
+não sei só sei que foi assim;neutro
 tinha mas acabou;neutro
 eu era menor nessa foto;neutro
 toque uma música;neutro
@@ -237,7 +237,7 @@ Eu não tenho alergias alimentares.;neutro
 Eu nunca quebrei um osso.;neutro
 Minha tristeza é como uma nuvem negra que paira sobre mim constantemente.;tristeza
 Sinto uma profunda tristeza ao pensar em tudo o que perdi.;tristeza
-Às vezes, a tristeza é a única companhia que tenho.;tristeza
+Às vezes a tristeza é a única companhia que tenho.;tristeza
 Sinto uma grande tristeza por nunca ter dito o quanto amava alguém que se foi.;tristeza
 Minha tristeza é como uma ferida que nunca cicatriza.;tristeza
 A tristeza me consome por dentro e é difícil escapar dela.;tristeza
@@ -253,7 +253,7 @@ Sinto uma tristeza imensa ao perceber que as pessoas que amo estão sofrendo.;tri
 A tristeza é um sentimento que me faz sentir fraco e vulnerável.;tristeza
 Sinto uma tristeza profunda por não ter tido a chance de me despedir de quem amava.;tristeza
 A tristeza é um fardo pesado demais para carregar sozinho.;tristeza
-Sinto uma tristeza imensa quando penso nas coisas que poderiam ter sido, mas não foram.;tristeza
+Sinto uma tristeza imensa quando penso nas coisas que poderiam ter sido mas não foram.;tristeza
 A tristeza me faz sentir como se nada tivesse sentido ou valor.;tristeza
 A tristeza me faz pensar que nunca mais vou conseguir ser feliz novamente.;tristeza
 Sinto uma tristeza profunda por ver pessoas que amo sofrendo sem poder ajudar.;tristeza
@@ -277,7 +277,7 @@ A vida é incrível quando você está rodeado de pessoas que ama;alegria
 É apenas mais um dia comum;neutro
 Estou simplesmente observando o que está acontecendo;neutro
 Não vejo motivo para me preocupar com isso;neutro
-Não me importa muito o resultado, qualquer um está bom;neutro
+Não me importa muito o resultado qualquer um está bom;neutro
 Estou triste;tristeza
 Sinto um vazio dentro de mim;tristeza
 Não consigo parar de chorar;tristeza
@@ -362,12 +362,12 @@ Estou com tanta raiva que mal consigo falar;raiva
 Não me faça começar a perder a paciência;raiva
 Estou cansado de sempre ser o último a saber;raiva
 Que saco;raiva
-Ah, que droga;raiva
-Poxa vida, que ódio;raiva
+Ah que droga;raiva
+Poxa vida que ódio;raiva
 Como isso é irritante;raiva
 Eu não aguento mais;raiva
-Argh, que raiva;raiva
-Aff, que coisa chata;raiva
+Argh que raiva;raiva
+Aff que coisa chata;raiva
 Que inferno;raiva
 Eu não mereço isso;raiva
 Vou explodir de raiva;raiva
@@ -380,11 +380,11 @@ Que droga de situação;raiva
 Por que tudo tem que dar errado;raiva
 Isso é insuportável;raiva
 Que sacanagem;raiva
-Meu Deus, que desespero;raiva
+Meu Deus que desespero;raiva
 Como isso me irrita;raiva
 Estou furioso;raiva
 Que ódio dessa pessoa;raiva
-Ah, que saco essa chatice;raiva
+Ah que saco essa chatice;raiva
 Não aguento mais tanta incompetência;raiva
 Que desgraça;raiva
 Como isso é injusto;raiva
@@ -397,11 +397,11 @@ Como pode ser tão complicado;raiva
 Que coisa mais irritante;raiva
 Que inferno de situação;raiva
 Estou muito bravo;raiva
-Que saco, isso é ridículo;raiva
+Que saco isso é ridículo;raiva
 Por que tudo tem que dar errado pra mim;raiva
 Que coisa mais insuportável;raiva
 Isso é uma falta de respeito;raiva
-Ah, que ódio dessa pessoa;raiva
+Ah que ódio dessa pessoa;raiva
 Que chatice sem fim;raiva
 Estou prestes a explodir;raiva
 Que falta de consideração dessa pessoa;raiva
@@ -513,7 +513,7 @@ Top dms;alegria
 É apenas mais um dia comum;neutro
 Estou simplesmente observando o que está acontecendo;neutro
 Não vejo motivo para me preocupar com isso;neutro
-Não me importa muito o resultado, qualquer um está bom;neutro
+Não me importa muito o resultado qualquer um está bom;neutro
 Foda;neutro
 To ligado;neutro
 Eu não tenho uma opinião formada sobre isso;neutro
@@ -610,7 +610,7 @@ Fica na sua;neutro
 Tanto faz;neutro
 Não tem problema;neutro
 Deixa pra lá;neutro
-Não sei, não vi;neutro
+Não sei não vi;neutro
 Não tô entendendo nada;neutro
 Não tô afim;neutro
 Não tô com pressa;neutro
@@ -628,7 +628,7 @@ Tô indiferente;neutro
 Não quero me envolver;neutro
 Não tô com cabeça pra isso;neutro
 Não me anima muito;neutro
-Tô de boa, sem estresse;neutro
+Tô de boa sem estresse;neutro
 Não tô nem triste nem feliz;neutro
 Não é nada pessoal;neutro
 Não faz diferença pra mim;neutro
@@ -682,169 +682,169 @@ Não faz diferença pra mim;neutro
  Tô com a alma lavada de lágrimas;tristeza
  Tô com um nó na garganta;tristeza
  Tô chorando as pitangas;tristeza
- E aí, beleza?;neutro
- Tô ligado que você não curte muito isso, mas;neutro
- Foi mal, não foi minha intenção te ofender;neutro
- De boa, mano?;neutro
- Cara, vou te falar;neutro
+ E aí beleza?;neutro
+ Tô ligado que você não curte muito isso mas;neutro
+ Foi mal não foi minha intenção te ofender;neutro
+ De boa mano?;neutro
+ Cara vou te falar;neutro
  Tá tudo tranquilo por aí?;neutro
- Tô de bobeira hoje, sem muita coisa pra fazer;neutro
- Pô, que saco isso!;neutro
- Valeu mesmo pela ajuda, velho;neutro
- Essa parada aí é meio complicada, né?;neutro
- Não é por nada não, mas;neutro
- Fica suave, irmão;neutro
+ Tô de bobeira hoje sem muita coisa pra fazer;neutro
+ Pô que saco isso!;neutro
+ Valeu mesmo pela ajuda velho;neutro
+ Essa parada aí é meio complicada né?;neutro
+ Não é por nada não mas;neutro
+ Fica suave irmão;neutro
  Tô achando que essa história tá mal contada;neutro
- Tá ligado quando a gente pensa que tá tudo certo, mas na real não tá?;neutro
- Tô na correria hoje, não dá pra conversar muito;neutro
- Tá bom, tá bom, não precisa ficar bravo;neutro
- Falou, meu chapa!;neutro
- Tô de boas, não vou fazer nada hoje;neutro
- Não é que eu não queira, mas não dá pra ir hoje;neutro
- Pode crer, é isso mesmo;neutro
- Esse lugar é da hora, vale a pena ir;neutro
- Tô só de passagem, não vou ficar muito tempo;neutro
- Foi uma correria danada, mas deu tudo certo no final;neutro
- Não é nada demais, só queria conversar um pouco;neutro
- Que chato isso, hein?;neutro
- É, tá difícil essa situação;neutro
- Tô só de boa aqui, curtindo a vibe;neutro
- Não vou me estressar por causa disso, não vale a pena;neutro
- Tá sussa, mano, fica de boa;neutro
- Não tô muito afim de fazer isso agora, sabe?;neutro
- Que saco, não aguento mais essa situação!;raiva
- Pô, que palhaçada é essa?;raiva
+ Tá ligado quando a gente pensa que tá tudo certo mas na real não tá?;neutro
+ Tô na correria hoje não dá pra conversar muito;neutro
+ Tá bom tá bom não precisa ficar bravo;neutro
+ Falou meu chapa!;neutro
+ Tô de boas não vou fazer nada hoje;neutro
+ Não é que eu não queira mas não dá pra ir hoje;neutro
+ Pode crer é isso mesmo;neutro
+ Esse lugar é da hora vale a pena ir;neutro
+ Tô só de passagem não vou ficar muito tempo;neutro
+ Foi uma correria danada mas deu tudo certo no final;neutro
+ Não é nada demais só queria conversar um pouco;neutro
+ Que chato isso hein?;neutro
+ É tá difícil essa situação;neutro
+ Tô só de boa aqui curtindo a vibe;neutro
+ Não vou me estressar por causa disso não vale a pena;neutro
+ Tá sussa mano fica de boa;neutro
+ Não tô muito afim de fazer isso agora sabe?;neutro
+ Que saco não aguento mais essa situação!;raiva
+ Pô que palhaçada é essa?;raiva
  Tô cansado de aguentar essa gente chata;raiva
  Já deu pra perceber que essa pessoa só quer me irritar;raiva
- Fala sério, isso é demais pra mim!;raiva
+ Fala sério isso é demais pra mim!;raiva
  Não aguento mais essa enrolação toda;raiva
  Tá difícil lidar com essa galera insuportável;raiva
  Não tenho mais paciência pra aguentar tanta besteira;raiva
  Tô cansado dessa história de fazer tudo sozinho;raiva
- Essa pessoa não sabe nem o que está falando, que ódio!;raiva
+ Essa pessoa não sabe nem o que está falando que ódio!;raiva
  Tô fulo da vida com essa situação;raiva
- Chega dessa palhaçada, não aguento mais;raiva
- Tá tudo errado, não consigo acreditar nisso;raiva
+ Chega dessa palhaçada não aguento mais;raiva
+ Tá tudo errado não consigo acreditar nisso;raiva
  Tô puto com essa atitude dessa pessoa;raiva
- Essa situação é um absurdo, não dá pra aguentar;raiva
+ Essa situação é um absurdo não dá pra aguentar;raiva
  Tô com raiva dessa galera que só quer me derrubar;raiva
- Que raiva, tô cansado de lidar com essa gente burra;raiva
+ Que raiva tô cansado de lidar com essa gente burra;raiva
  Tá difícil manter a calma com essa situação toda;raiva
  Tô bolado com esse pessoal que não faz nada direito;raiva
- Essa pessoa não tem noção, tô indignado!;raiva
- Tô com ódio dessa enrolação toda, não aguento mais;raiva
+ Essa pessoa não tem noção tô indignado!;raiva
+ Tô com ódio dessa enrolação toda não aguento mais;raiva
  Tô puto com essa galera que não me respeita;raiva
  Tá difícil segurar a raiva com tanta coisa acontecendo;raiva
  Tô irritado demais com essa atitude da pessoa;raiva
  Tô cansado de lidar com gente falsa e mentirosa;raiva
  Tô de saco cheio dessa enrolação toda;raiva
- Que merda, não dá mais pra aguentar essa situação;raiva
+ Que merda não dá mais pra aguentar essa situação;raiva
  Tô muito puto com essa atitude dessa pessoa;raiva
  Tô de saco cheio de ser enganado o tempo todo;raiva
- Que ódio, não aguento mais lidar com essa galera que só me atrapalha;raiva
- Caraca, que maneiro!;alegria
- Tô feliz demais, véio!;alegria
+ Que ódio não aguento mais lidar com essa galera que só me atrapalha;raiva
+ Caraca que maneiro!;alegria
+ Tô feliz demais véio!;alegria
  Essa notícia me deixou com um sorrisão no rosto;alegria
- Aí sim, tô muito feliz por você!;alegria
- Tô pulando de alegria, meu chapa!;alegria
- É isso aí, meu parça, comemora mesmo!;alegria
- Tô sorrindo de orelha a orelha, que felicidade!;alegria
+ Aí sim tô muito feliz por você!;alegria
+ Tô pulando de alegria meu chapa!;alegria
+ É isso aí meu parça comemora mesmo!;alegria
+ Tô sorrindo de orelha a orelha que felicidade!;alegria
  Tô muito feliz por ter conseguido realizar isso;alegria
  A vida é uma festa e hoje eu tô comemorando!;alegria
- Tô me sentindo nas nuvens, que alegria!;alegria
- Essa é pra celebrar, não é todo dia que a gente conquista algo assim;alegria
- Tô mega feliz, não cabe em mim!;alegria
- Tô dançando de alegria aqui, véio!;alegria
+ Tô me sentindo nas nuvens que alegria!;alegria
+ Essa é pra celebrar não é todo dia que a gente conquista algo assim;alegria
+ Tô mega feliz não cabe em mim!;alegria
+ Tô dançando de alegria aqui véio!;alegria
  Não tem como não sorrir com uma notícia dessas;alegria
- É isso aí, não deixe de comemorar cada conquista!;alegria
- Tô comemorando essa vitória aqui com meus amigos, tá lindo demais!;alegria
- Essa é pra celebrar com um bom churrasco, não é mesmo?;alegria
- Tô radiante, meu chapa!;alegria
+ É isso aí não deixe de comemorar cada conquista!;alegria
+ Tô comemorando essa vitória aqui com meus amigos tá lindo demais!;alegria
+ Essa é pra celebrar com um bom churrasco não é mesmo?;alegria
+ Tô radiante meu chapa!;alegria
  Tô feliz da vida com essa notícia maravilhosa!;alegria
- Não tem preço essa sensação de felicidade, é demais!;alegria
+ Não tem preço essa sensação de felicidade é demais!;alegria
  Tô comemorando essa vitória como se não houvesse amanhã!;alegria
- Alegria contagiante essa, né?;alegria
- Tô saltitando de felicidade, mano!;alegria
- Essa é a prova de que quando a gente quer, a gente consegue!;alegria
+ Alegria contagiante essa né?;alegria
+ Tô saltitando de felicidade mano!;alegria
+ Essa é a prova de que quando a gente quer a gente consegue!;alegria
  Tô muito feliz por fazer parte desse momento tão especial;alegria
  Tô tão feliz que nem sei o que dizer!;alegria
- Essa é pra guardar na memória, tá sendo demais!;alegria
+ Essa é pra guardar na memória tá sendo demais!;alegria
  É tanta felicidade que parece que vou explodir de alegria!;alegria
- Tô batendo palmas aqui, que coisa mais linda!;alegria
- A felicidade é plena, e hoje ela tá presente em mim!;alegria
- Tô na bad, não tô conseguindo sair dessa tristeza;tristeza
- Tô no fundo do poço, mano;tristeza
+ Tô batendo palmas aqui que coisa mais linda!;alegria
+ A felicidade é plena e hoje ela tá presente em mim!;alegria
+ Tô na bad não tô conseguindo sair dessa tristeza;tristeza
+ Tô no fundo do poço mano;tristeza
  Tá difícil lidar com essa dor no peito;tristeza
- Tô de coração partido, tá doendo demais;tristeza
- Tô na deprê total, sem forças pra nada;tristeza
- Tô numa tristeza profunda, não consigo nem explicar;tristeza
- Tá difícil segurar as lágrimas, tá doendo demais;tristeza
- Tô em uma fase muito triste, tá difícil levantar da cama;tristeza
- Tô sentindo uma dor muito grande no peito, mano;tristeza
+ Tô de coração partido tá doendo demais;tristeza
+ Tô na deprê total sem forças pra nada;tristeza
+ Tô numa tristeza profunda não consigo nem explicar;tristeza
+ Tá difícil segurar as lágrimas tá doendo demais;tristeza
+ Tô em uma fase muito triste tá difícil levantar da cama;tristeza
+ Tô sentindo uma dor muito grande no peito mano;tristeza
  Tô me sentindo sozinho e abandonado;tristeza
- Tô numa fossa danada, não sei o que fazer;tristeza
- Tô arrasado, não consigo nem pensar direito;tristeza
- Tô num vazio enorme, parece que nada faz sentido;tristeza
- Tô sofrendo demais, tá difícil segurar a emoção;tristeza
+ Tô numa fossa danada não sei o que fazer;tristeza
+ Tô arrasado não consigo nem pensar direito;tristeza
+ Tô num vazio enorme parece que nada faz sentido;tristeza
+ Tô sofrendo demais tá difícil segurar a emoção;tristeza
  Tô com o coração partido em mil pedaços;tristeza
  Tá doendo demais essa saudade que sinto;tristeza
- Tô numa tristeza sem fim, não consigo enxergar uma saída;tristeza
+ Tô numa tristeza sem fim não consigo enxergar uma saída;tristeza
  Tô sentindo um aperto no peito que não passa;tristeza
- Tá difícil lidar com a solidão, tá pesando demais;tristeza
- Tô com um buraco no peito, não sei como preencher;tristeza
- Tô numa angústia sem fim, tá difícil respirar;tristeza
- Tô num luto profundo, não consigo aceitar a perda;tristeza
- Tô me sentindo perdido, sem rumo e sem direção;tristeza
+ Tá difícil lidar com a solidão tá pesando demais;tristeza
+ Tô com um buraco no peito não sei como preencher;tristeza
+ Tô numa angústia sem fim tá difícil respirar;tristeza
+ Tô num luto profundo não consigo aceitar a perda;tristeza
+ Tô me sentindo perdido sem rumo e sem direção;tristeza
  Tá doendo demais essa sensação de abandono;tristeza
- Tô numa tristeza que não tem fim, parece que tudo é cinza;tristeza
- Tá difícil suportar essa dor no peito, tá dilacerando;tristeza
- Tô me sentindo um estranho no mundo, tá tudo tão distante;tristeza
- Tá pesando demais essa saudade que sinto, tá difícil seguir em frente;tristeza
- Tô numa tristeza que só Deus sabe, tá doendo demais;tristeza
- Tá difícil acreditar que tudo isso aconteceu, tô arrasado;tristeza
+ Tô numa tristeza que não tem fim parece que tudo é cinza;tristeza
+ Tá difícil suportar essa dor no peito tá dilacerando;tristeza
+ Tô me sentindo um estranho no mundo tá tudo tão distante;tristeza
+ Tá pesando demais essa saudade que sinto tá difícil seguir em frente;tristeza
+ Tô numa tristeza que só Deus sabe tá doendo demais;tristeza
+ Tá difícil acreditar que tudo isso aconteceu tô arrasado;tristeza
 que noticia maravilhosa;alegria
 ah que maravilha;alegria
 isso é maravilhoso;alegria
  Que maravilha! Não poderia estar mais feliz agora!;alegria
  É uma maravilha ver tudo dando certo assim;alegria
  Que notícia maravilhosa! Estou radiante de alegria!;alegria
- Tudo está uma maravilha hoje, né?;alegria
+ Tudo está uma maravilha hoje né?;alegria
  Que maravilha ter vocês todos aqui celebrando comigo!;alegria
- Não tem nada melhor do que acordar e ver um dia lindo como este, é uma maravilha!;alegria
- Que maravilha essa música, não consigo parar de dançar!;alegria
- Estar com você é sempre uma maravilha, nunca me divirto tanto!;alegria
- Essa sobremesa ficou uma maravilha, parabéns!;alegria
- Tudo que aconteceu hoje foi uma maravilha, vou guardar esse dia na memória para sempre!;alegria
- Não é lá essas coisas, mas também não é de se jogar fora;neutro
- Tá de boa, não tem problema nenhum;neutro
- Tá tudo na média, não vejo nada demais;neutro
- Não é nem lá, nem cá É só mais uma opção;neutro
- É uma questão de gosto, cada um tem o seu;neutro
- Tá tranquilo, não tenho uma opinião formada sobre isso;neutro
- É um assunto delicado, não vou me envolver;neutro
- Não tenho nada a acrescentar, está tudo certo;neutro
- Não é uma maravilha, mas também não é o fim do mundo;neutro
- Tá ok, não tenho muito o que comentar sobre isso;neutro
- Não tenho nada contra, mas também não tenho nada a favor;neutro
- É um tema controverso, não dá para ser simplista;neutro
- Tá tudo certo, não há nada de novo nisso;neutro
- Não é nem bom, nem ruim É só mais um fato;neutro
- Tá de boa, não me afeta diretamente;neutro
- Não é o que eu esperava, mas também não é uma decepção;neutro
- Tá tudo na média, não dá para exigir muito mais;neutro
- Não é o meu forte, mas também não é o meu ponto fraco;neutro
- Tá de boa, não é algo que me faça sentir alguma emoção;neutro
- Não é algo que me interesse, mas também não é algo que me incomode;neutro
- Não é uma questão de sim ou não, é mais complexo que isso;neutro
- Tá de boa, não é algo que eu me preocupo muito;neutro
- Não tenho uma opinião formada, ainda preciso pensar sobre isso;neutro
- Não é o meu foco agora, tenho outras coisas para me preocupar;neutro
- Tá tudo certo, não há nada de errado com isso;neutro
- Não é nada de especial, mas também não é uma decepção;neutro
- Não é um assunto que eu domine, mas também não é algo que eu desconheça;neutro
- Tá de boa, não vejo motivo para me preocupar com isso;neutro
- Não é algo que eu dê muita importância, mas também não é algo que eu despreze;neutro
- Tá tudo na média, não há nada de extraordinário nisso;neutro
+ Não tem nada melhor do que acordar e ver um dia lindo como este é uma maravilha!;alegria
+ Que maravilha essa música não consigo parar de dançar!;alegria
+ Estar com você é sempre uma maravilha nunca me divirto tanto!;alegria
+ Essa sobremesa ficou uma maravilha parabéns!;alegria
+ Tudo que aconteceu hoje foi uma maravilha vou guardar esse dia na memória para sempre!;alegria
+ Não é lá essas coisas mas também não é de se jogar fora;neutro
+ Tá de boa não tem problema nenhum;neutro
+ Tá tudo na média não vejo nada demais;neutro
+ Não é nem lá nem cá É só mais uma opção;neutro
+ É uma questão de gosto cada um tem o seu;neutro
+ Tá tranquilo não tenho uma opinião formada sobre isso;neutro
+ É um assunto delicado não vou me envolver;neutro
+ Não tenho nada a acrescentar está tudo certo;neutro
+ Não é uma maravilha mas também não é o fim do mundo;neutro
+ Tá ok não tenho muito o que comentar sobre isso;neutro
+ Não tenho nada contra mas também não tenho nada a favor;neutro
+ É um tema controverso não dá para ser simplista;neutro
+ Tá tudo certo não há nada de novo nisso;neutro
+ Não é nem bom nem ruim É só mais um fato;neutro
+ Tá de boa não me afeta diretamente;neutro
+ Não é o que eu esperava mas também não é uma decepção;neutro
+ Tá tudo na média não dá para exigir muito mais;neutro
+ Não é o meu forte mas também não é o meu ponto fraco;neutro
+ Tá de boa não é algo que me faça sentir alguma emoção;neutro
+ Não é algo que me interesse mas também não é algo que me incomode;neutro
+ Não é uma questão de sim ou não é mais complexo que isso;neutro
+ Tá de boa não é algo que eu me preocupo muito;neutro
+ Não tenho uma opinião formada ainda preciso pensar sobre isso;neutro
+ Não é o meu foco agora tenho outras coisas para me preocupar;neutro
+ Tá tudo certo não há nada de errado com isso;neutro
+ Não é nada de especial mas também não é uma decepção;neutro
+ Não é um assunto que eu domine mas também não é algo que eu desconheça;neutro
+ Tá de boa não vejo motivo para me preocupar com isso;neutro
+ Não é algo que eu dê muita importância mas também não é algo que eu despreze;neutro
+ Tá tudo na média não há nada de extraordinário nisso;neutro
 Alegria contagiante!;alegria
 Estou muito feliz!;alegria
  Isso me faz tão feliz!;alegria
@@ -860,7 +860,7 @@ Estou muito feliz!;alegria
  Fico feliz em te ver de novo;alegria
  Essa comida está muito gostosa!;alegria
  É bom estar aqui com você;alegria
- Obrigado pelo presente, adorei!;alegria
+ Obrigado pelo presente adorei!;alegria
  Que bom que deu tudo certo no final;alegria
  A música desse filme é tão animada!;alegria
  Gosto muito de passar tempo com minha família;alegria
@@ -876,7 +876,7 @@ Estou muito feliz!;alegria
  A sensação de dever cumprido é muito satisfatória;alegria
  Sempre me animo com uma boa xícara de café;alegria
  A temperatura está amena hoje;neutro
- Recebi seu e-mail, obrigado pela informação;neutro
+ Recebi seu e-mail obrigado pela informação;neutro
  Achei interessante o que você me contou;neutro
  Estou contente por ter feito essa tarefa;neutro
  Não tive nenhum problema no trajeto para o trabalho;neutro
@@ -915,66 +915,66 @@ Estou muito feliz!;alegria
  Fico contente em saber que há progresso nesse assunto;neutro
  Não há como negar que essa notícia é motivadora;neutro
  É bom saber que as coisas estão dando certo;neutro
- Esse cara me tirou do sério, fiquei puto da vida com ele;raiva
- Não aguento mais esse trampo, tô bolado com tudo isso;raiva
- Esse político só faz merda, tô indignado com essa palhaçada toda;raiva
- O meu chefe é um babaca, tô fulo da vida com ele;raiva
- Esse sistema é uma bosta, tô puto com essa porra toda;raiva
- Não sei como aguentar mais essa situação, tô putaço com tudo isso;raiva
- Esse motorista é um idiota, tô pistola com essa falta de respeito;raiva
- Essa burocracia é uma palhaçada, tô de saco cheio dessa merda toda;raiva
- Não acredito que ele fez isso de novo, tô chateado pra caralho com essa atitude dele;raiva
+ Esse cara me tirou do sério fiquei puto da vida com ele;raiva
+ Não aguento mais esse trampo tô bolado com tudo isso;raiva
+ Esse político só faz merda tô indignado com essa palhaçada toda;raiva
+ O meu chefe é um babaca tô fulo da vida com ele;raiva
+ Esse sistema é uma bosta tô puto com essa porra toda;raiva
+ Não sei como aguentar mais essa situação tô putaço com tudo isso;raiva
+ Esse motorista é um idiota tô pistola com essa falta de respeito;raiva
+ Essa burocracia é uma palhaçada tô de saco cheio dessa merda toda;raiva
+ Não acredito que ele fez isso de novo tô chateado pra caralho com essa atitude dele;raiva
  Tô puto da vida com essa falta de consideração das pessoas;raiva
- Essa injustiça é uma sacanagem, tô puto com esse sistema falho;raiva
- Esse atendimento é uma merda, tô bolado com essa falta de profissionalismo;raiva
- Não aguento mais esse trânsito, tô puto com essa porra toda;raiva
- Esse cliente é um maluco, tô pistola com essa falta de noção dele;raiva
+ Essa injustiça é uma sacanagem tô puto com esse sistema falho;raiva
+ Esse atendimento é uma merda tô bolado com essa falta de profissionalismo;raiva
+ Não aguento mais esse trânsito tô puto com essa porra toda;raiva
+ Esse cliente é um maluco tô pistola com essa falta de noção dele;raiva
  Tô putasso com essa falta de comprometimento das pessoas;raiva
- Esse serviço é um lixo, tô bolado com essa falta de qualidade;raiva
- Não suporto mais essa falta de respeito, tô chateado pra caralho com essa atitude das pessoas;raiva
- Esse produto é uma bosta, tô putaço com essa falta de eficiência;raiva
- Não acredito que isso está acontecendo, tô indignado com essa palhaçada toda;raiva
- Esse sistema é uma merda, tô fulo da vida com essa porra toda;raiva
- Esse cara me tirou do sério, fiquei puto da vida com ele;raiva
- Não aguento mais esse trampo, tô bolado com tudo isso;raiva
- Esse político só faz merda, tô indignado com essa palhaçada toda;raiva
- O meu chefe é um babaca, tô fulo da vida com ele;raiva
- Esse sistema é uma bosta, tô puto com essa porra toda;raiva
- Não sei como aguentar mais essa situação, tô putaço com tudo isso;raiva
- Esse motorista é um idiota, tô pistola com essa falta de respeito;raiva
- Essa burocracia é uma palhaçada, tô de saco cheio dessa merda toda;raiva
- Não acredito que ele fez isso de novo, tô chateado pra caralho com essa atitude dele;raiva
+ Esse serviço é um lixo tô bolado com essa falta de qualidade;raiva
+ Não suporto mais essa falta de respeito tô chateado pra caralho com essa atitude das pessoas;raiva
+ Esse produto é uma bosta tô putaço com essa falta de eficiência;raiva
+ Não acredito que isso está acontecendo tô indignado com essa palhaçada toda;raiva
+ Esse sistema é uma merda tô fulo da vida com essa porra toda;raiva
+ Esse cara me tirou do sério fiquei puto da vida com ele;raiva
+ Não aguento mais esse trampo tô bolado com tudo isso;raiva
+ Esse político só faz merda tô indignado com essa palhaçada toda;raiva
+ O meu chefe é um babaca tô fulo da vida com ele;raiva
+ Esse sistema é uma bosta tô puto com essa porra toda;raiva
+ Não sei como aguentar mais essa situação tô putaço com tudo isso;raiva
+ Esse motorista é um idiota tô pistola com essa falta de respeito;raiva
+ Essa burocracia é uma palhaçada tô de saco cheio dessa merda toda;raiva
+ Não acredito que ele fez isso de novo tô chateado pra caralho com essa atitude dele;raiva
  Tô puto da vida com essa falta de consideração das pessoas;raiva
- Essa injustiça é uma sacanagem, tô puto com esse sistema falho;raiva
- Esse atendimento é uma merda, tô bolado com essa falta de profissionalismo;raiva
- Não aguento mais esse trânsito, tô puto com essa porra toda;raiva
- Esse cliente é um maluco, tô pistola com essa falta de noção dele;raiva
+ Essa injustiça é uma sacanagem tô puto com esse sistema falho;raiva
+ Esse atendimento é uma merda tô bolado com essa falta de profissionalismo;raiva
+ Não aguento mais esse trânsito tô puto com essa porra toda;raiva
+ Esse cliente é um maluco tô pistola com essa falta de noção dele;raiva
  Tô putasso com essa falta de comprometimento das pessoas;raiva
- Esse serviço é um lixo, tô bolado com essa falta de qualidade;raiva
- Não suporto mais essa falta de respeito, tô chateado pra caralho com essa atitude das pessoas;raiva
- Esse produto é uma bosta, tô putaço com essa falta de eficiência;raiva
- Não acredito que isso está acontecendo, tô indignado com essa palhaçada toda;raiva
- Esse sistema é uma merda, tô fulo da vida com essa porra toda;raiva
- Não tô legal hoje, tô na bad;tristeza
- Tô depre, não consigo parar de pensar nisso;tristeza
+ Esse serviço é um lixo tô bolado com essa falta de qualidade;raiva
+ Não suporto mais essa falta de respeito tô chateado pra caralho com essa atitude das pessoas;raiva
+ Esse produto é uma bosta tô putaço com essa falta de eficiência;raiva
+ Não acredito que isso está acontecendo tô indignado com essa palhaçada toda;raiva
+ Esse sistema é uma merda tô fulo da vida com essa porra toda;raiva
+ Não tô legal hoje tô na bad;tristeza
+ Tô depre não consigo parar de pensar nisso;tristeza
  Tô na fossa por causa desse término de relacionamento;tristeza
- Tô na merda, não tem nada dando certo na minha vida;tristeza
- Tô num buraco sem fundo, não vejo saída pra isso;tristeza
- Tô numa vibe triste, parece que nada me anima mais;tristeza
- Tô na deprê, não tenho ânimo pra nada;tristeza
- Tô tristonho, não consigo lidar com essa situação;tristeza
- Tô com o coração apertado, essa notícia me abalou demais;tristeza
- Tô arrasado, não esperava que as coisas fossem acabar assim;tristeza
- Tô num vazio enorme, parece que nada preenche;tristeza
- Tô na bad vibes, não consigo pensar em nada positivo;tristeza
- Tô na fossa profunda, não vejo a hora de sair dessa;tristeza
- Tô cabisbaixo, não consigo esconder a tristeza;tristeza
- Tô abatido, parece que a vida tá pesada demais;tristeza
- Tô pra baixo, não vejo a hora de isso passar;tristeza
- Tô numa deprê daquelas, não consigo me animar com nada;tristeza
- Tô desolado, não esperava por essa decepção;tristeza
- Tô com o coração partido, não consigo superar essa perda;tristeza
- Tô na tristeza, não tem nada que me faça sorrir hoje;tristeza
+ Tô na merda não tem nada dando certo na minha vida;tristeza
+ Tô num buraco sem fundo não vejo saída pra isso;tristeza
+ Tô numa vibe triste parece que nada me anima mais;tristeza
+ Tô na deprê não tenho ânimo pra nada;tristeza
+ Tô tristonho não consigo lidar com essa situação;tristeza
+ Tô com o coração apertado essa notícia me abalou demais;tristeza
+ Tô arrasado não esperava que as coisas fossem acabar assim;tristeza
+ Tô num vazio enorme parece que nada preenche;tristeza
+ Tô na bad vibes não consigo pensar em nada positivo;tristeza
+ Tô na fossa profunda não vejo a hora de sair dessa;tristeza
+ Tô cabisbaixo não consigo esconder a tristeza;tristeza
+ Tô abatido parece que a vida tá pesada demais;tristeza
+ Tô pra baixo não vejo a hora de isso passar;tristeza
+ Tô numa deprê daquelas não consigo me animar com nada;tristeza
+ Tô desolado não esperava por essa decepção;tristeza
+ Tô com o coração partido não consigo superar essa perda;tristeza
+ Tô na tristeza não tem nada que me faça sorrir hoje;tristeza
  Tô de boa;neutro
  Tô tranquilo;neutro
  Tô na minha;neutro
@@ -995,15 +995,15 @@ Estou muito feliz!;alegria
  Tô sem muita emoção;neutro
  Tô num estado neutro de espírito;neutro
  Tô sem reação;neutro
- Nossa, estou só alegria!;alegria
- Tô felizão da vida, mano!;alegria
- Tô pulando de felicidade, mano!;alegria
+ Nossa estou só alegria!;alegria
+ Tô felizão da vida mano!;alegria
+ Tô pulando de felicidade mano!;alegria
  Tô nas nuvens de tanta alegria!;alegria
  Tô feliz pra caramba!;alegria
- Tô rindo à toa, irmão!;alegria
+ Tô rindo à toa irmão!;alegria
  Tô dando pulinhos de tanta alegria!;alegria
  Tô batendo palmas de tanta felicidade!;alegria
- Tô sorrindo de orelha a orelha, meu chapa!;alegria
+ Tô sorrindo de orelha a orelha meu chapa!;alegria
  Tô comemorando como se não houvesse amanhã!;alegria
  Tô na maior vibração de alegria!;alegria
  Tô tão feliz que nem tô me aguentando!;alegria
@@ -1012,53 +1012,53 @@ Estou muito feliz!;alegria
  Tô dançando de felicidade!;alegria
  Tô cantando de tanta alegria!;alegria
  Tô gargalhando de tanto prazer!;alegria
- Tô com um sorrisão no rosto, mano!;alegria
+ Tô com um sorrisão no rosto mano!;alegria
  Tô dando pulos de tanta felicidade!;alegria
- Tô explodindo de alegria, meu chapa!;alegria
- Tô arrasado, não consigo nem falar;tristeza
- Tô deprimido, não sei o que fazer;tristeza
- Tô com o coração partido, não dá pra disfarçar;tristeza
- Tô tristonho, não tô no meu melhor dia;tristeza
- Tô de luto por dentro, não consigo sorrir;tristeza
- Tô na fossa, não consigo sair dessa;tristeza
- Tô com um nó na garganta, não consigo falar;tristeza
- Tô com uma sensação ruim, não sei explicar;tristeza
- Tô sentindo um vazio no peito, não sei como preencher;tristeza
- Tô com uma nuvem negra em cima de mim, não passa;tristeza
- Tô me sentindo pra baixo, sem animação;tristeza
- Tô com o semblante triste, não consigo disfarçar;tristeza
- Tô com os olhos marejados, a emoção tá à flor da pele;tristeza
- Tô me sentindo desanimado, sem energia;tristeza
- Tô me sentindo solitário, mesmo com pessoas ao meu redor;tristeza
- Tô desolado, tudo parece sem sentido;tristeza
- Tô me sentindo perdido, não sei qual caminho seguir;tristeza
- Tô me sentindo desesperançoso, sem perspectiva de melhora;tristeza
- Tô me sentindo abatido, como se a vida fosse um fardo;tristeza
- Tô me sentindo deprimido, sem vontade de fazer nada;tristeza
+ Tô explodindo de alegria meu chapa!;alegria
+ Tô arrasado não consigo nem falar;tristeza
+ Tô deprimido não sei o que fazer;tristeza
+ Tô com o coração partido não dá pra disfarçar;tristeza
+ Tô tristonho não tô no meu melhor dia;tristeza
+ Tô de luto por dentro não consigo sorrir;tristeza
+ Tô na fossa não consigo sair dessa;tristeza
+ Tô com um nó na garganta não consigo falar;tristeza
+ Tô com uma sensação ruim não sei explicar;tristeza
+ Tô sentindo um vazio no peito não sei como preencher;tristeza
+ Tô com uma nuvem negra em cima de mim não passa;tristeza
+ Tô me sentindo pra baixo sem animação;tristeza
+ Tô com o semblante triste não consigo disfarçar;tristeza
+ Tô com os olhos marejados a emoção tá à flor da pele;tristeza
+ Tô me sentindo desanimado sem energia;tristeza
+ Tô me sentindo solitário mesmo com pessoas ao meu redor;tristeza
+ Tô desolado tudo parece sem sentido;tristeza
+ Tô me sentindo perdido não sei qual caminho seguir;tristeza
+ Tô me sentindo desesperançoso sem perspectiva de melhora;tristeza
+ Tô me sentindo abatido como se a vida fosse um fardo;tristeza
+ Tô me sentindo deprimido sem vontade de fazer nada;tristeza
 slc isso tudo é um lixo;raiva
 eu odeio isso;raiva
 estou muito puto com tudo;raiva
- O ódio ferve dentro de mim, alimentado pela raiva que sinto;raiva
- Sinto um profundo ódio ardendo em mim, uma raiva incontrolável;raiva
+ O ódio ferve dentro de mim alimentado pela raiva que sinto;raiva
+ Sinto um profundo ódio ardendo em mim uma raiva incontrolável;raiva
  A mera menção do nome dele é suficiente para desencadear meu ódio e minha raiva;raiva
- A raiva e o ódio se misturam em mim, formando uma tempestade de emoções;raiva
+ A raiva e o ódio se misturam em mim formando uma tempestade de emoções;raiva
  Nunca senti tanto ódio e raiva por alguém como sinto por ele;raiva
- A visão dele me enche de ódio, uma raiva que não consigo conter;raiva
- Cada vez que penso nele, meu coração é tomado por um intenso ódio e raiva;raiva
- A raiva borbulha dentro de mim, transformando-se em um ódio implacável;raiva
- Sinto um ódio visceral, uma raiva que consome minha alma;raiva
+ A visão dele me enche de ódio uma raiva que não consigo conter;raiva
+ Cada vez que penso nele meu coração é tomado por um intenso ódio e raiva;raiva
+ A raiva borbulha dentro de mim transformando-se em um ódio implacável;raiva
+ Sinto um ódio visceral uma raiva que consome minha alma;raiva
 0 A presença dele é suficiente para desencadear uma enxurrada de ódio e raiva em mim;raiva
  Meus punhos se cerram de pura raiva e ódio quando penso nele;raiva
  Não há palavras para expressar o quanto sinto ódio e raiva por ele;raiva
  Apenas o som da voz dele é capaz de acender meu ódio e minha raiva;raiva
  A raiva que sinto por ele é tão intensa que beira o ódio cego;raiva
- Cada vez que o vejo, sinto um ódio profundo e uma raiva avassaladora;raiva
- O ódio que sinto por ele é como uma chama que queima minha alma, alimentada pela raiva;raiva
- A raiva me consome quando penso nele, enchendo-me de um ódio indescritível;raiva
+ Cada vez que o vejo sinto um ódio profundo e uma raiva avassaladora;raiva
+ O ódio que sinto por ele é como uma chama que queima minha alma alimentada pela raiva;raiva
+ A raiva me consome quando penso nele enchendo-me de um ódio indescritível;raiva
  Apenas sua presença é suficiente para inflamar meu ódio e minha raiva;raiva
  Meus olhos ardem com o ódio e a raiva que sinto por ele;raiva
 0 Sinto um ódio tão profundo e uma raiva tão intensa que mal consigo controlar-me;raiva
- A raiva corre em minhas veias, misturada com o ódio que sinto por ele;raiva
+ A raiva corre em minhas veias misturada com o ódio que sinto por ele;raiva
  Cada lembrança dele é como um gatilho para o meu ódio e minha raiva;raiva
  Apenas pensar nele é o suficiente para acender meu ódio e minha raiva até o limite;raiva
  Nunca conheci alguém que despertasse em mim tanto ódio e tanta raiva como ele;raiva
@@ -1068,3 +1068,303 @@ estou muito puto com tudo;raiva
  Sinto um ódio intenso e uma raiva cega que me consomem por dentro;raiva
  Apenas a menção do nome dele é suficiente para desencadear uma onda de ódio e raiva em mim;raiva
 0 Meu coração é tomado por um ódio amargo e uma raiva implacável sempre que penso nele;raiva
+ Estou tão feliz que o sol está brilhando hoje!;alegria
+ A vida é uma aventura emocionante que me enche de alegria!;alegria
+ Recebi uma notícia incrível que me deixou radiante!;alegria
+ Ver o sorriso no rosto do meu filho me enche de alegria;alegria
+ Aproveitei um passeio no parque e me senti cheio de felicidade;alegria
+ Reencontrei um amigo querido e meu coração se encheu de alegria;alegria
+ Consegui um aumento no trabalho e estou saltitante de alegria!;alegria
+ Comemorei uma conquista pessoal e a alegria transbordou em mim;alegria
+ Ganhei um presente surpresa que me deixou com um sorriso de orelha a orelha;alegria
+ A risada de uma criança sempre me traz uma sensação de alegria pura;alegria
+ Passei o dia com minha família e foi uma experiência cheia de alegria;alegria
+ Terminei um projeto que estava me deixando ansioso e agora estou me sentindo extremamente feliz;alegria
+ Dancei como se ninguém estivesse olhando e a alegria tomou conta de mim;alegria
+ Recebi uma mensagem de texto de um amigo distante e fiquei repleto de alegria;alegria
+ Encontrei um animal de estimação perdido e ver o alívio do dono me encheu de alegria;alegria
+ Fui a um concerto da minha banda favorita e me diverti muito, sentindo uma grande alegria;alegria
+ Experimentei algo novo e emocionante que me deixou com um sentimento de alegria contagiante;alegria
+ Fiz uma boa ação e o calor no meu coração me encheu de alegria;alegria
+ Cheguei ao topo de uma montanha e a vista deslumbrante me trouxe uma sensação de alegria indescritível;alegria
+ Recebi uma surpresa inesperada de alguém especial e minha alegria transbordou;alegria
+ Fiz uma viagem para um lugar que sempre quis visitar e a felicidade tomou conta de mim;alegria
+ Realizei um sonho que tinha desde criança e a alegria que senti foi inigualável;alegria
+ Celebrei uma ocasião especial com amigos queridos e minha alegria foi imensa;alegria
+ Encontrei um hobby que me apaixonei e me sinto alegre cada vez que o pratico;alegria
+ Abracei alguém que amo muito e a felicidade desse momento me encheu de alegria e gratidão;alegria
+ O céu estava nublado, nem claro nem escuro;neutro
+ O resultado do teste foi neutro, nem positivo nem negativo;neutro
+ Ele expressou uma opinião neutra sobre o assunto;neutro
+ O clima estava ameno, nem quente nem frio;neutro
+ Ela manteve uma postura neutra durante o debate;neutro
+ A comida estava com um sabor neutro, sem muitos temperos;neutro
+ A reação da plateia ao discurso foi neutra, sem muitos aplausos ou vaias;neutro
+ O filme recebeu críticas mistas, com opiniões neutras;neutro
+ A cor da parede era neutra, sem muita vivacidade;neutro
+ Ele se manteve calmo e neutro diante da situação;neutro
+ O relatório apresentou resultados neutros em relação ao desempenho da empresa;neutro
+ Ela não demonstrou preferência por nenhum candidato, mantendo-se neutra na eleição;neutro
+ O tom da conversa foi neutro, sem emoções fortes;neutro
+ A escolha do vestuário foi neutra, sem cores chamativas;neutro
+ O feedback recebido foi neutro, sem críticas nem elogios significativos;neutro
+ A resposta dele foi neutra, sem expressar muito entusiasmo ou descontentamento;neutro
+ A decisão foi tomada com base em critérios neutros, sem envolvimento emocional;neutro
+ A reunião foi tranquila, com discussões neutras;neutro
+ A música de fundo era neutra, sem letra ou ritmo marcante;neutro
+ A pintura tinha tons neutros, sem cores vibrantes;neutro
+ Ele se posicionou de forma neutra em relação ao conflito;neutro
+ A mensagem que recebeu foi ambígua, com um tom neutro;neutro
+ Ela manteve uma atitude neutra diante das críticas recebidas;neutro
+ O relato foi imparcial, apresentando uma visão neutra dos fatos;neutro
+ A escolha do cardápio foi neutra, oferecendo opções variadas para todos os gostos;neutro
+ Eu estou furioso com a forma como fui tratado;raiva
+ Ela ficou com uma expressão de raiva no rosto;raiva
+ Ele gritou de raiva quando descobriu a verdade;raiva
+ A injustiça me deixou com uma sensação de pura raiva;raiva
+ A falta de respeito dele me deixou enfurecido;raiva
+ A traição dela despertou uma fúria em mim;raiva
+ Os erros repetitivos me deixam com raiva;raiva
+ Eu sinto uma raiva intensa quando sou ignorado;raiva
+ A incompetência dos outros me deixa irritado;raiva
+ A falta de consideração dos colegas me causa profunda raiva;raiva
+ Eu não consigo suportar a arrogância dele, isso me deixa com muita raiva;raiva
+ A hipocrisia dela me enche de raiva;raiva
+ A desonestidade dele me faz ferver de raiva;raiva
+ Eu estou enfurecido com a corrupção e injustiça no mundo;raiva
+ A falta de ética nos negócios me deixa com uma raiva incontrolável;raiva
+ A negligência das autoridades me causa revolta e raiva;raiva
+ As mentiras e manipulações dele me deixam furioso;raiva
+ A traição de um amigo próximo me enche de raiva e decepção;raiva
+ A falta de consideração pelas necessidades dos outros me faz sentir uma profunda raiva;raiva
+ A impunidade de crimes me deixa indignado e com muita raiva;raiva
+ A incompetência de certas pessoas me irrita profundamente;raiva
+ A falta de empatia e compreensão dos outros me deixa com uma raiva crescente;raiva
+ A injustiça social e a discriminação me enchem de raiva e frustração;raiva
+ A falta de responsabilidade e comprometimento de alguns me faz sentir uma raiva avassaladora;raiva
+ A violência e a crueldade no mundo me deixam com uma raiva profunda e tristeza;raiva
+ Meu coração está pesado e a tristeza parece não ter fim;tristeza
+ Sinto-me triste e solitário, como se o mundo estivesse contra mim;tristeza
+ A dor dentro de mim é avassaladora, e as lágrimas caem em silêncio;tristeza
+ A tristeza me envolve como uma névoa densa, obscurecendo tudo ao meu redor;tristeza
+ Sinto uma tristeza profunda que parece consumir cada fibra do meu ser;tristeza
+ Meu sorriso se desvaneceu e deu lugar a uma tristeza que não posso conter;tristeza
+ As lágrimas fluem livremente, expressando a tristeza que sinto em meu coração;tristeza
+ A tristeza me consome como uma chama queimando lentamente;tristeza
+ Sinto um vazio profundo em meu peito, acompanhado de uma tristeza insuperável;tristeza
+ A tristeza se aninha em minha alma, como se fosse uma parte intrínseca de mim;tristeza
+ Meus olhos estão embaçados pelas lágrimas, enquanto a tristeza me envolve em sua teia;tristeza
+ A tristeza me deixa impotente, incapaz de encontrar consolo ou alívio;tristeza
+ Sinto-me afogado em um oceano de tristeza, lutando para encontrar uma saída;tristeza
+ A tristeza me faz sentir como se estivesse em um buraco negro, sem esperança de escape;tristeza
+ A melancolia preenche minha mente e meu coração, tornando tudo sombrio;tristeza
+ A tristeza é como uma ferida aberta, que dói constantemente;tristeza
+ Sinto-me desamparado e triste, como se estivesse preso em um labirinto sem saída;tristeza
+ A tristeza me puxa para baixo, como se fosse um peso insuportável;tristeza
+ Sinto-me isolado e triste, como se estivesse olhando o mundo de uma janela embaçada;tristeza
+ A tristeza me consome lentamente, roubando minha energia e motivação;tristeza
+ Meu coração está partido em mil pedaços, e a tristeza é avassaladora;tristeza
+ A sensação de tristeza é como uma ferida que não cicatriza, sempre presente;tristeza
+ Sinto-me como se estivesse andando em uma névoa triste, sem rumo ou direção;tristeza
+ A tristeza se tornou minha companheira constante, me lembrando de minha dor a cada momento;tristeza
+ Sinto-me envolto em um manto de tristeza, incapaz de encontrar uma saída dessa escuridão;tristeza
+ Eu odeio quando as pessoas são desonestas;raiva
+ O ódio que sinto quando sou injustiçado é insuportável;raiva
+ Odeio quando as coisas não saem do jeito que planejei;raiva
+ Sinto um profundo ódio quando sou traído por alguém em quem confiava;raiva
+ Odeio ver a corrupção se espalhar em todos os níveis da sociedade;raiva
+ Tenho um ódio visceral por pessoas intolerantes e preconceituosas;raiva
+ Sinto um ódio incontrolável quando vejo a injustiça prevalecer;raiva
+ Odeio quando sou ignorado ou desprezado por alguém que deveria me valorizar;raiva
+ Sinto um intenso ódio quando sou alvo de mentiras e falsidades;raiva
+ Odeio quando sou julgado ou criticado sem motivo aparente;raiva
+ Tenho um profundo ódio por quem me machuca intencionalmente;raiva
+ Sinto um ódio avassalador por pessoas que abusam do poder;raiva
+ Odeio quando as pessoas são cruéis com os mais vulneráveis;raiva
+ Sinto um ódio irracional por quem prejudica os inocentes;raiva
+ Odeio quando sou manipulado ou enganado por pessoas sem escrúpulos;raiva
+ Tenho um ódio intenso por quem me trai ou me decepciona;raiva
+ Sinto um profundo ódio quando sou subestimado ou menosprezado;raiva
+ Odeio quando as pessoas agem com arrogância e superioridade;raiva
+ Sinto um ódio implacável por quem me prejudica deliberadamente;raiva
+ Odeio quando vejo a injustiça prevalecer e os culpados saírem impunes;raiva
+ Tenho um ódio feroz por quem tenta me controlar ou manipular;raiva
+ Sinto um ódio fervoroso por quem mente e engana para obter vantagens;raiva
+ Odeio quando as pessoas agem com egoísmo e falta de empatia;raiva
+ Tenho um profundo ódio por quem não valoriza a vida e a dignidade humana;raiva
+ Sinto um ódio avassalador por quem tenta me difamar ou prejudicar minha reputação;raiva
+ Odeio quando sou alvo de bullying ou discriminação;raiva
+ Tenho um ódio intenso por quem me desrespeita ou insulta;raiva
+ Sinto um ódio implacável por quem age de forma injusta ou desonesta;raiva
+ Odeio quando sou vítima de traição ou deslealdade;raiva
+ Sinto um ódio incontrolável por quem me faz mal de forma intencional;raiva
+ Tô de boa, curtindo a vida na moral, cheio de alegria!;alegria
+ Que coisa linda, tô na vibe positiva, sorrindo à toa!;alegria
+ Tô nas nuvens, numa felicidade plena, é só alegria!;alegria
+ Tô na paz do Senhor, com o coração leve e cheio de sorrisos!;alegria
+ É só alegria, tô no pique, cheio de energia boa!;alegria
+ Tô na maior animação, num alto astral, pura felicidade!;alegria
+ Tô numa vibe maravilhosa, radiante, só curtindo as coisas boas!;alegria
+ Tô com o sorriso de orelha a orelha, a felicidade tá transbordando!;alegria
+ Tô na vibe good vibes, cheio de gratidão, é só alegria!;alegria
+ Tô com o coração quentinho, pleno de felicidade, é sensacional!;alegria
+ Tô com a moral lá em cima, cheio de alegria contagiante!;alegria
+ Tô na maior animação, cheio de good vibes, sorrindo à toa!;alegria
+ Tô me sentindo nas nuvens, é só alegria e gratidão!;alegria
+ Tô na maior satisfação, com a alma leve e o coração feliz!;alegria
+ Tô radiante, cheio de sorrisos, é só felicidade no peito!;alegria
+ Tô com a maior alegria do mundo, é uma explosão de felicidade!;alegria
+ Tô na vibe positiva, numa sintonia incrível, é só alegria!;alegria
+ Tô com a maior satisfação do universo, é uma alegria que não cabe em mim!;alegria
+ Tô me sentindo nas alturas, é só good vibes e alegria!;alegria
+ Tô transbordando de felicidade, é uma sensação indescritível!;alegria
+ Tô na maior vibe positiva, felizão da vida, é só sorrisos!;alegria
+ Tô me sentindo nas estrelas, num clima de pura alegria!;alegria
+ Tô naquele clima de êxtase, cheio de alegria e positividade!;alegria
+ Tô com o coração saltitando de alegria, é uma sensação incrível!;alegria
+ Tô na maior animação, com a felicidade pulsando no peito!;alegria
+ Tô me sentindo nas nuvens, é só sorrisos e gratidão!;alegria
+ Tô radiante de felicidade, é uma vibe surreal!;alegria
+ Tô naquele pique, com o astral lá em cima, cheio de alegria!;alegria
+ Tô com o coração transbordando de felicidade, é uma emoção única!;alegria
+ Tô com a alma leve e o sorriso no rosto, é só alegria e satisfação!;alegria
+ Tô na bad, só queria sumir;tristeza
+ Tô de bode, nada dá certo;tristeza
+ Tô na deprê, não consigo sorrir;tristeza
+ Tô na fossa, parece que o mundo desabou;tristeza
+ Tô na pior, não tenho mais ânimo pra nada;tristeza
+ Tô na sofrência, o coração tá em frangalhos;tristeza
+ Tô num buraco, não vejo saída;tristeza
+ Tô num desânimo só, tudo parece sem sentido;tristeza
+ Tô na lama, a vida tá difícil demais;tristeza
+ Tô numa maré de azar, nada dá certo pra mim;tristeza
+ Tô na merda, não sei como sair dessa;tristeza
+ Tô no fundo do poço, não vejo luz no fim do túnel;tristeza
+ Tô numa tristeza profunda, não consigo sair dela;tristeza
+ Tô com o coração partido, é uma dor insuportável;tristeza
+ Tô na fossa do tigre, não consigo encontrar alegria em nada;tristeza
+ Tô na maior bad trip, parece que tudo tá dando errado;tristeza
+ Tô na seca de felicidade, nada me anima;tristeza
+ Tô no limbo emocional, sem saber pra onde ir;tristeza
+ Tô de coração partido, só choro e sinto saudades;tristeza
+ Tô com o moral no chão, a vida tá difícil demais;tristeza
+ Tô com a alma lavada em lágrimas, a tristeza é avassaladora;tristeza
+ Tô de cara fechada, não consigo sorrir genuinamente;tristeza
+ Tô de cabeça baixa, não consigo enxergar o lado bom das coisas;tristeza
+ Tô com o coração apertado, é uma dor que não passa;tristeza
+ Tô no choro livre, não consigo me conter;tristeza
+ Tô com um nó na garganta, a tristeza é palpável;tristeza
+ Tô no clima de cemitério, tudo parece fúnebre;tristeza
+ Tô na solidão profunda, parece que o mundo me abandonou;tristeza
+ Tô no choro copioso, a dor é insuportável;tristeza
+ Tô com o coração em pedaços, é uma tristeza que me consome;tristeza
+ De boa na lagoa;neutro
+ Na paz e amor;neutro
+ Tudo tranquilo no front;neutro
+ De boas, só observando;neutro
+ Tô na minha, de boa;neutro
+ Na neutralidade total;neutro
+ Na dúvida, deixo quieto;neutro
+ Vamo que vamo, sem stress;neutro
+ A vida é assim, né?;neutro
+ Na moral, não tô nem aí;neutro
+ Sigo na minha, de boa;neutro
+ Tô na minha, sem paranoias;neutro
+ É isso aí, sem tretas;neutro
+ Tô suave, sem preocupação;neutro
+ Na tranquilidade, curtindo a brisa;neutro
+ Sem stress, só levando a vida;neutro
+ Na relax, de boas;neutro
+ Tô na paz, sem correria;neutro
+ Tudo nos conformes, na normalidade;neutro
+ Na isenção total, sem envolvimento;neutro
+ Sigo na minha, de forma neutra;neutro
+ Sem emoção, apenas observando;neutro
+ Mantendo a neutralidade, de boa;neutro
+ Na imparcialidade, sem tomar partido;neutro
+ Tô de boa, sem alarde;neutro
+ Sem animação, só seguindo em frente;neutro
+ Na indiferença, de boas;neutro
+ Tô na minha, de forma imparcial;neutro
+ Na equidistância, sem me envolver;neutro
+ Sem reações, só na neutralidade;neutro
+ Hoje o dia está lindo, e me sinto grato por cada momento;alegria
+ Que felicidade ter minha família reunida em casa!;alegria
+ As risadas dos meus netos são a minha maior alegria;alegria
+ Nunca é tarde demais para viver momentos inesquecíveis!;alegria
+ Adoro quando o sol brilha e sinto o calor em meu rosto;alegria
+ A vida é cheia de surpresas e eu estou adorando cada uma delas!;alegria
+ Ver meus filhos conquistando seus sonhos me enche de alegria;alegria
+ A melhor parte de envelhecer é poder apreciar as pequenas coisas da vida;alegria
+ Tenho muito orgulho de tudo o que conquistei ao longo dos anos;alegria
+ Nada me faz mais feliz do que estar cercado de amigos verdadeiros;alegria
+ A maturidade trouxe-me uma serenidade e uma felicidade que eu não tinha quando era mais jovem;alegria
+ Cada ruga no meu rosto é uma lembrança de uma história vivida com alegria;alegria
+ As memórias dos momentos felizes são como tesouros que guardo com carinho;alegria
+ A vida é um presente precioso, e eu agradeço todos os dias por estar aqui;alegria
+ A felicidade está nas coisas simples, como um pôr do sol ou um abraço apertado;alegria
+ Nunca me canso de admirar a beleza da natureza, ela me enche de alegria;alegria
+ A alegria de ter saúde e poder desfrutar da vida é indescritível;alegria
+ A idade não é um obstáculo para a felicidade, é apenas uma nova fase para aproveitar;alegria
+ Cada novo dia é uma oportunidade para ser feliz e fazer o que amo;alegria
+ A alegria de estar rodeado de pessoas que amo é incomparável;alegria
+ Sinto-me grato por todas as amizades que fiz ao longo dos anos, elas enchem minha vida de alegria;alegria
+ A alegria de aprender coisas novas e me manter ativo é uma bênção na minha idade;alegria
+ A maturidade me trouxe sabedoria e a capacidade de apreciar a vida de uma forma única e especial;alegria
+ A risada é o melhor remédio, e eu me certifico de rir todos os dias;alegria
+ A alegria de compartilhar histórias e experiências com os mais jovens me mantém jovem de coração;alegria
+ A felicidade está em encontrar o equilíbrio e a gratidão em todas as fases da vida;alegria
+ A alegria de relembrar momentos preciosos do passado é algo que aquece meu coração;alegria
+ A vida é cheia de surpresas maravilhosas, e cada dia é uma nova oportunidade para ser feliz;alegria
+ A alegria de ajudar os outros e fazer o bem é uma fonte infinita de felicidade;alegria
+ A felicidade é contagiosa, e eu tento espalhá-la para todos ao meu redor, independentemente da idade;alegria
+ Acho que a neutralidade é uma abordagem equilibrada para lidar com as situações da vida;neutro
+ Não me sinto particularmente animado nem triste com a notícia;neutro
+ Acredito que é importante manter uma postura neutra em questões controversas;neutro
+ Não tenho uma opinião forte sobre esse assunto;neutro
+ Acho que a política é uma questão complicada e tento ficar neutro em relação a isso;neutro
+ Não me sinto especialmente entusiasmado nem decepcionado com os resultados do jogo;neutro
+ Tenho uma visão neutra sobre a mudança no ambiente de trabalho;neutro
+ Para mim, é indiferente se vamos jantar em casa ou sair para comer;neutro
+ Não tenho uma preferência clara entre praia e montanha para passar as férias;neutro
+ Não me importo muito com o tipo de música que vamos ouvir;neutro
+ Acho que tanto faz se vamos assistir a um filme de ação ou um drama;neutro
+ Não tenho uma preferência definida entre sair ou ficar em casa no fim de semana;neutro
+ Não tenho uma opinião forte sobre a nova política de impostos;neutro
+ Acredito que é importante ouvir todos os lados de um argumento antes de tomar uma posição;neutro
+ Não me sinto particularmente empolgado nem apreensivo em relação à mudança;neutro
+ Tenho uma atitude neutra em relação às mudanças tecnológicas;neutro
+ Não me sinto inclinado nem contra em relação à nova política da empresa;neutro
+ Acho que é importante ser imparcial ao tomar decisões importantes;neutro
+ Não tenho uma opinião clara sobre a tendência atual da moda;neutro
+ Tenho uma abordagem equilibrada em relação às mudanças no mercado financeiro;neutro
+ Acredito que é importante manter uma mente aberta e não tomar partido rapidamente;neutro
+ Não tenho uma preferência clara entre esportes de equipe e esportes individuais;neutro
+ Acho que é importante ser imparcial ao lidar com conflitos pessoais;neutro
+ Não me sinto particularmente otimista nem pessimista em relação ao futuro;neutro
+ Tenho uma visão neutra sobre o uso de tecnologia na educação;neutro
+ Acredito que é importante considerar os prós e contras antes de tomar uma decisão;neutro
+ Não me sinto especialmente preocupado nem tranquilo com a situação atual;neutro
+ Tenho uma abordagem equilibrada em relação a questões sociais e políticas;neutro
+ Não tenho uma opinião clara sobre o estilo de vida urbano versus o estilo de vida rural;neutro
+ Acho que é importante ser imparcial e justo;neutro
+ Acho que a vida passou voando e sinto falta de muitas oportunidades perdidas;tristeza
+ Sinto uma tristeza profunda quando penso em amigos que já partiram;tristeza
+ Às vezes, me sinto sozinho e melancólico, como se o tempo tivesse passado rápido demais;tristeza
+ Fico triste ao ver meus filhos crescerem tão rápido e se afastarem de mim;tristeza
+ Lembro com tristeza das pessoas que eu amava e que se foram, deixando um vazio em meu coração;tristeza
+ A vida não é mais como costumava ser, e isso me entristece;tristeza
+ Sinto falta de ter mais energia e vitalidade como quando eu era mais jovem;tristeza
+ A solidão muitas vezes me deixa triste, especialmente quando vejo outras pessoas com suas famílias e amigos;tristeza
+ Às vezes, sinto que perdi muitas oportunidades na vida e isso me traz tristeza;tristeza
+ A saúde já não é mais a mesma e isso me deixa preocupado e triste;tristeza
+ Ver os jovens se divertindo e aproveitando a vida me traz uma sensação de tristeza e saudade;tristeza
+ A tristeza me visita quando penso nos sonhos que não se realizaram;tristeza
+ Sinto falta de pessoas que eram importantes na minha vida e já não estão mais aqui;tristeza
+ A perda de entes queridos ao longo dos anos me deixa com um coração pesado e triste;tristeza
+ Às vezes, me sinto frustrado com as escolhas que fiz e isso me traz tristeza;tristeza
+ A tristeza me toma quando percebo que o tempo está passando rápido demais e não posso fazer nada para pará-lo;tristeza
+ As mudanças físicas que vêm com a idade me deixam triste, pois me sinto menos capaz do que antes;tristeza
+ A tristeza surge quando penso nas oportunidades que deixei passar por medo ou insegurança;tristeza
+ Sinto saudades de pessoas que eram parte da minha vida e que se afastaram ao longo dos anos;tristeza
+ A sensação de que o tempo está se esgotando e que há coisas que não poderei mais fazer me deixa triste;tristeza
