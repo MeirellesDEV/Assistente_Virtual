@@ -8,8 +8,7 @@ from tensorflow.keras.layers import Embedding, LSTM, Dense, Bidirectional
 import csv
 import nltk
 
-# data = pd.read_csv('C:/Users/ti.joao/Documents/GitHub/Real_Estate/input/treinamento.csv',encoding='ISO-8859-1')
-
+# todo o csv e passa para a varivale base_treinamento
 with open('C:/Users/ti.joao/Documents/GitHub/Real_Estate/input/treinamento.csv', newline='') as csv_file:
     reader = csv.reader(csv_file, delimiter=';')
 
@@ -17,20 +16,24 @@ with open('C:/Users/ti.joao/Documents/GitHub/Real_Estate/input/treinamento.csv',
 
     #print(base_treinamento)
 
-
+#cria um data frame para adicionar as colunas
 data = pd.DataFrame(base_treinamento)
 data.columns = ['Frase', 'Sentimento']
 
+#mapeia todas os sentimentos e depois compara e troca os nomes por valores
 mapping = {'alegria': 0, 'neutro': 1, 'tristeza': 2, 'raiva': 3}
 data['Sentimento'] = data['Sentimento'].map(mapping)
 
+#pega os values das frases e sentiementos
 texts = data['Frase'].values
 labels = data['Sentimento'].values
 
+#faz a tokenização das frases
 tokenizer = Tokenizer(num_words=10000, oov_token="<OOV>")
 tokenizer.fit_on_texts(texts)
 sequences = tokenizer.texts_to_sequences(texts)
 
+#A PARTIR DAQUI PODE COMENTAR PARA QUANDO NÃO FOR TREINAR
 # padded_sequences = pad_sequences(sequences, maxlen=100, truncating='post', padding='post')
 
 # training_size = int(len(padded_sequences) * 0.8)
@@ -47,6 +50,7 @@ sequences = tokenizer.texts_to_sequences(texts)
 #     Dense(4, activation='softmax')
 # ])
 
+#compila e executa todo o treinamento e testa
 # model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # history = model.fit(
@@ -56,11 +60,14 @@ sequences = tokenizer.texts_to_sequences(texts)
 #     validation_data=(testing_sequences, testing_labels)
 # )
 
+# salva o modelo com esse nome
 # model.save('baxacinho.0.1')
 
+# aqui faz o teste e calcula a acuracia do modelo
 # test_loss, test_acc = model.evaluate(testing_sequences, testing_labels)
 # print('Test Accuracy:', test_acc)
 
+#NÃO COMENTAR ESSA FUNÇÃO
 def sentimento(alegria, raiva, tristeza, neutro):
     if alegria > raiva and alegria > tristeza and alegria > neutro:
         print('O sentimento que está sentido é alegria')
