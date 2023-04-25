@@ -12,6 +12,7 @@ import wikipedia as wk
 
 from googletrans import Translator
 
+
 texto_fala = py.init()
 
 # variáveis de controle
@@ -69,7 +70,7 @@ def microfone():
 def openia(fala):
 
     falar('Pesquisa por OPENAI desativada por enquanto...')
-    # op.api_key = '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'
+    # op.api_key = 'token'
 
     # model_engine = 'text-davinci-003'
 
@@ -115,9 +116,9 @@ def ouvir():
 
 def spotify():
 
-    os.environ['SPOTIPY_CLIENT_ID'] = '<d42fde4f8111483087e47122e353b9f2>'
-    os.environ['SPOTIPY_CLIENT_SECRET'] = '0e56ae6b8c45442588a032688690732e'
-    os.environ['SPOTIPY_REDIRECT_URI'] = 'https://example.com/callback'
+    os.environ['SPOTIPY_CLIENT_ID'] = 'token'
+    os.environ['SPOTIPY_CLIENT_SECRET'] = 'token'
+    os.environ['SPOTIPY_REDIRECT_URI'] = 'redirect'
 
     scope = "user-read-playback-state,user-modify-playback-state"
     sp = spotipy.Spotify(client_credentials_manager=SpotifyOAuth(scope=scope))
