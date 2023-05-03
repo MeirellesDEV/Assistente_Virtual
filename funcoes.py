@@ -323,7 +323,7 @@ def tradutor(fala):
 
     falar(trans.translate(conteudo, dest=codLang).text)
 
-def analisarFrase(str):
+def analisarFrase(str, id):
 
     model = load_model('baxacinho.0.1')
 
@@ -350,8 +350,6 @@ def analisarFrase(str):
             neutro = f'{prob:.3f}'
 
     sentimento = tf.sentimento(alegria, raiva, tristeza, neutro)
-
-    id = '9'
 
     conn = sqlite3.connect('bacaxinho.db')
     cursor = conn.cursor()
@@ -398,3 +396,23 @@ def analisar_input(input_usuario):
         if palavra in palavras_chave:
             palavras_chave[palavra]()
             break
+
+def ultimoSentimento(id):
+
+    conn = sqlite3.connect('bacaxinho.db')
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT identificador FROM usuario u WHERE u.id = "+id)
+    resultado = cursor.fetchall()
+    nomeTabela = resultado[0][0] 
+
+    cursor.execute("SELECT id_sentimento FROM "+nomeTabela+" ORDER BY id desc")
+    idsent = cursor.fetchall()
+    id_sentimento = idsent[0][0] 
+
+    cursor.execute("SELECT s.nome FROM sentimento s WHERE s.id = '"+str(id_sentimento)+"'")
+    sent = cursor.fetchall()
+    sentimento = sent[0][0] 
+
+    return sentimento
+
