@@ -18,7 +18,10 @@ from googletrans import Translator
 from tensorflow.keras.models import load_model
 import leitor_tensorflow as tf
 
-id = 9
+import nltk
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
 
 texto_fala = py.init()
 
@@ -367,3 +370,31 @@ def analisarFrase(str):
     conn.commit()
 
     return sentimento
+
+def analisar_input(input_usuario):
+
+    # nltk.download('punkt')
+    # nltk.download('stopwords')
+    # nltk.download('wordnet')
+
+    palavras_chave = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador, 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 'finalizar': endapp, 'finaliza': endapp,
+                 'finalize': endapp, 'desligar': endapp, 'apresentação': apresentacao, 'spotify': spotify, 'dormir': awake, 'dormi': awake, 'novo apelido': novoapelido, 'quais apelidos': listarApelidos, 'que apelidos': listarApelidos, 'novo nome': novonome, 'wikipedia': wikipedia}
+    
+    # converte o input para minúsculas
+    input_usuario = input_usuario.lower()
+    
+    # tokeniza o input em palavras
+    palavras = word_tokenize(input_usuario)
+    
+    # remove as stop words (palavras comuns sem significado, como "em", "de", "a", etc.)
+    palavras_sem_stopwords = [palavra for palavra in palavras if palavra not in stopwords.words('portuguese')]
+    
+    # realiza a lematização das palavras (transformação das palavras para sua forma base)
+    lemmatizer = WordNetLemmatizer()
+    palavras_lemmatizadas = [lemmatizer.lemmatize(palavra) for palavra in palavras_sem_stopwords]
+    
+    # executa a função correspondente à primeira palavra-chave encontrada
+    for palavra in palavras_lemmatizadas:
+        if palavra in palavras_chave:
+            palavras_chave[palavra]()
+            break

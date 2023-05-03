@@ -30,4 +30,4 @@ def analisarFrase(str):
     return tf.sentimento(alegria, raiva, tristeza, neutro) 
 
 #testando função
-#print(type(analisarFrase("VAI SE FUDEEEEEE")))
+print(type(analisarFrase("VAI SE FUDEEEEEE")))
