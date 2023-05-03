@@ -6,7 +6,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Sequential, load_model
 from tensorflow.keras.layers import Embedding, LSTM, Dense, Bidirectional
 import csv
-import nltk
 
 #region treino carregamento e salvamento
 def train(epochs_num):
@@ -27,7 +26,7 @@ def load():
 #endregion
 
 # todo o csv e passa para a varivale base_treinamento
-with open('C:/users/rocap/OneDrive/Documentos/Programacao/python/leitor de emocoes tensorflow/dados/treinamento.csv', newline='') as csv_file:
+with open('C:/Users/ti.joao/Documents/GitHub/Real_Estate/input/treinamento.csv', newline='') as csv_file:
     reader = csv.reader(csv_file, delimiter=';')
 
     base_treinamento = [tuple(row) for row in reader]
@@ -80,23 +79,23 @@ test_loss, test_acc = model.evaluate(testing_sequences, testing_labels)
 #NÃO COMENTAR ESSA FUNÇÃO
 def sentimento(alegria, raiva, tristeza, neutro):
     if alegria > raiva and alegria > tristeza and alegria > neutro:
-        #print('O sentimento que está sentido é alegria')
+        # print('O sentimento que está sentido é alegria')
         return "alegria"
 
     elif raiva > alegria and raiva > tristeza and raiva > neutro:
-        #print('O sentimento que está sentido é raiva')
+        # print('O sentimento que está sentido é raiva')
         return "raiva"
 
     elif tristeza > alegria and tristeza > raiva and tristeza > neutro:
-        #print('O sentimento que está sentido é tristeza')
+        # print('O sentimento que está sentido é tristeza')
         return "tristeza"
 
     elif neutro > alegria and neutro > raiva and neutro > tristeza:
-        #print('O sentimento que está sentido é neutro')
+        # print('O sentimento que está sentido é neutro')
         return "neutro"
 
     else:
-        #print('O sentimento não encontrado')
+        # print('O sentimento não encontrado')
         return "desconhecido"
 
 

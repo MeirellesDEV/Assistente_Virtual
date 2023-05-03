@@ -27,16 +27,18 @@ if __name__ == "__main__":
             # recebendo o input
             comando = fc.recebeInput()
 
-            if fc.searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
-                # executando a função
-                DICT_COMMANDS[KEYWORDS[fc.searchKey(
-                    DICT_COMMANDS, KEYWORDS, comando)]]()
+            fc.analisarFrase(comando)
+
+            # if fc.searchKey(DICT_COMMANDS, KEYWORDS, comando) != -1:
+            #     # executando a função
+            #     DICT_COMMANDS[KEYWORDS[fc.searchKey(
+            #         DICT_COMMANDS, KEYWORDS, comando)]]()
                 
-            elif 'youtube' in comando:
-                fc.youtube(comando)
-            elif 'google' in comando:
-                fc.google(comando)
-            elif 'como fala' in comando:
-                fc.tradutor(comando)
-            else:
-                fc.openia(comando)
+            # elif 'youtube' in comando:
+            #     fc.youtube(comando)
+            # elif 'google' in comando:
+            #     fc.google(comando)
+            # elif 'como fala' in comando:
+            #     fc.tradutor(comando)
+            # else:
+            #     fc.openia(comando)

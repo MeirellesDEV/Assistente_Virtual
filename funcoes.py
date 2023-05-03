@@ -5,6 +5,9 @@ import os
 import webbrowser as wb
 import openai as op
 
+import sqlite3
+import datetime
+
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
@@ -12,6 +15,10 @@ import wikipedia as wk
 
 from googletrans import Translator
 
+from tensorflow.keras.models import load_model
+import leitor_tensorflow as tf
+
+id = 9
 
 texto_fala = py.init()
 
@@ -312,3 +319,51 @@ def tradutor(fala):
     conteudo = ' '.join(txt)
 
     falar(trans.translate(conteudo, dest=codLang).text)
+
+def analisarFrase(str):
+
+    model = load_model('baxacinho.0.1')
+
+    frase = str
+    nova_sequencia = tf.tokenizer.texts_to_sequences([frase])
+    nova_sequencia_padded = tf.pad_sequences(nova_sequencia, maxlen=100, truncating='post', padding='post')
+    prediction = model.predict(nova_sequencia_padded)[0]
+
+    mapping_reverse = {0: 'alegria', 1: 'neutro', 2: 'tristeza', 3: 'raiva'}
+
+    for i, prob in enumerate(prediction):
+        # print(f'{mapping_reverse[i]}: {prob:.3f}')
+        
+        if f'{mapping_reverse[i]}' == 'alegria': 
+            alegria = f'{prob:.3f}'
+
+        if f'{mapping_reverse[i]}' == 'raiva': 
+            raiva = f'{prob:.3f}'
+
+        if f'{mapping_reverse[i]}' == 'tristeza': 
+            tristeza = f'{prob:.3f}'
+
+        if f'{mapping_reverse[i]}' == 'neutro': 
+            neutro = f'{prob:.3f}'
+
+    sentimento = tf.sentimento(alegria, raiva, tristeza, neutro)
+
+    id = '9'
+
+    conn = sqlite3.connect('bacaxinho.db')
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT identificador FROM usuario u WHERE u.id = "+id)
+    resultado = cursor.fetchall()
+    nomeTabela = resultado[0][0] 
+
+    cursor.execute("SELECT id FROM sentimento s WHERE s.nome = '"+sentimento+"'")
+    sent = cursor.fetchall()
+    id_sentimento = sent[0][0] 
+
+    dataAtual = datetime.date.today().strftime("%d/%m/%Y")
+
+    cursor.execute("INSERT INTO "+nomeTabela+"(id_usuario,id_sentimento,dt_insercao)VALUES(?,?,?)",(id, id_sentimento,dataAtual))
+    conn.commit()
+
+    return sentimento
