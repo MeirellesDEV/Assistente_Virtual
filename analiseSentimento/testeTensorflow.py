@@ -6,7 +6,6 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Embedding, LSTM, Dense, Bidirectional
 import csv
-import nltk
 
 # todo o csv e passa para a varivale base_treinamento
 with open('C:/Users/ti.joao/Documents/GitHub/Real_Estate/input/treinamento.csv', newline='') as csv_file:
@@ -34,38 +33,38 @@ tokenizer.fit_on_texts(texts)
 sequences = tokenizer.texts_to_sequences(texts)
 
 #A PARTIR DAQUI PODE COMENTAR PARA QUANDO NÃO FOR TREINAR
-# padded_sequences = pad_sequences(sequences, maxlen=100, truncating='post', padding='post')
+padded_sequences = pad_sequences(sequences, maxlen=100, truncating='post', padding='post')
 
-# training_size = int(len(padded_sequences) * 0.8)
-# training_sequences = padded_sequences[:training_size]
-# training_labels = labels[:training_size]
+training_size = int(len(padded_sequences) * 0.8)
+training_sequences = padded_sequences[:training_size]
+training_labels = labels[:training_size]
 
-# testing_sequences = padded_sequences[training_size:]
-# testing_labels = labels[training_size:]
+testing_sequences = padded_sequences[training_size:]
+testing_labels = labels[training_size:]
 
-# model = Sequential([
-#     Embedding(10000, 64),
-#     Bidirectional(LSTM(64)),
-#     Dense(64, activation='relu'),
-#     Dense(4, activation='softmax')
-# ])
+model = Sequential([
+    Embedding(10000, 64),
+    Bidirectional(LSTM(64)),
+    Dense(64, activation='relu'),
+    Dense(4, activation='softmax')
+])
 
-#compila e executa todo o treinamento e testa
-# model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+# compila e executa todo o treinamento e testa
+model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-# history = model.fit(
-#     training_sequences,
-#     training_labels,
-#     epochs=10,
-#     validation_data=(testing_sequences, testing_labels)
-# )
+history = model.fit(
+    training_sequences,
+    training_labels,
+    epochs=10,
+    validation_data=(testing_sequences, testing_labels)
+)
 
 # salva o modelo com esse nome
 # model.save('baxacinho.0.1')
 
 # aqui faz o teste e calcula a acuracia do modelo
-# test_loss, test_acc = model.evaluate(testing_sequences, testing_labels)
-# print('Test Accuracy:', test_acc)
+test_loss, test_acc = model.evaluate(testing_sequences, testing_labels)
+print('Test Accuracy:', test_acc)
 
 #NÃO COMENTAR ESSA FUNÇÃO
 def sentimento(alegria, raiva, tristeza, neutro):
