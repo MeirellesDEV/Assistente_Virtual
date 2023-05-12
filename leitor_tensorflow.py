@@ -18,7 +18,7 @@ def train(epochs_num):
 
 def save():
     # salva o modelo com esse nome
-    model.save('baxacinho.0.1')
+    model.save('baxacinho.0.3')
 
 def load():
     global model
@@ -61,9 +61,9 @@ testing_sequences = padded_sequences[training_size:]
 testing_labels = labels[training_size:]
 
 model = Sequential([
-    Embedding(10000, 64),
-    Bidirectional(LSTM(64)),
-    Dense(64, activation='relu'),
+    Embedding(10000, 128),
+    Bidirectional(LSTM(128)),
+    Dense(128, activation='relu'),
     Dense(4, activation='softmax')
 ])
 
@@ -73,8 +73,9 @@ model.compile(loss='sparse_categorical_crossentropy', optimizer='adam', metrics=
 #load()
 
 # aqui faz o teste e calcula a acuracia do modelo
-test_loss, test_acc = model.evaluate(testing_sequences, testing_labels)
-#print('Test Accuracy:', test_acc)
+def acuracia():
+    test_loss, test_acc = model.evaluate(testing_sequences, testing_labels)
+    print('Test Accuracy:', test_acc)
 
 #NÃO COMENTAR ESSA FUNÇÃO
 def sentimento(alegria, raiva, tristeza, neutro):
@@ -100,5 +101,8 @@ def sentimento(alegria, raiva, tristeza, neutro):
 
 
 #funções para treinar e salvar dados
-#train(10)
-#save()
+# train(10)
+# save()
+# acuracia()
+
+

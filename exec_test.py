@@ -1,6 +1,6 @@
 from tensorflow.keras.models import load_model
 
-model = load_model('baxacinho.0.1')
+model = load_model('baxacinho.0.3')
 
 import leitor_tensorflow as tf
 
@@ -30,4 +30,4 @@ def analisarFrase(str):
     return tf.sentimento(alegria, raiva, tristeza, neutro) 
 
 #testando função
-print(type(analisarFrase("VAI SE FUDEEEEEE")))
+print(type(analisarFrase("Toque playlist triste no spotfy")))

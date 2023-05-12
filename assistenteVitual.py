@@ -9,25 +9,13 @@ if __name__ == "__main__":
     # loop principal
     while True:
 
-        print('Aguardando chamada...')
-        # aguardando chamada
+        id = '9'
+
+        # recebendo o input
         comando = fc.recebeInput()
-        if fc.chamou(AWAKE_COMMANDS, comando):
-            ultimoSentimento = fc.ultimoSentimento()
-            fc.saudacao()
-            fc.awake()
 
-            id = '9'
+        # função que salva o sentimento no banco
+        fc.analisarFrase(comando, id)
 
-        # ao chamar
-        while fc.acordado:
-            print("Escutando...")
-
-            # recebendo o input
-            comando = fc.recebeInput()
-
-            # função que salva o sentimento no banco
-            fc.analisarFrase(comando, id)
-
-            #função que analisa a melhro resposta
-            fc.analisar_input(comando, id)
+        #função que analisa a melhro resposta
+        fc.analisar_input(comando)

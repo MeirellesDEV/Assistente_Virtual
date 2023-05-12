@@ -11,8 +11,6 @@ import datetime
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-import wikipedia as wk
-
 from googletrans import Translator
 
 from tensorflow.keras.models import load_model
@@ -23,6 +21,8 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 
+import json
+
 texto_fala = py.init()
 
 # variáveis de controle
@@ -32,6 +32,7 @@ acordado = False
 bot_name = 'bacaxinho'  # nome do bot
 
 # funcoes de configuração
+
 def falar(audio):
 
     # print do que o robo falar, para funções de debug
@@ -185,9 +186,6 @@ def comoestou():
     falar('Estou bem se você estiver bem meu mestre')
     falar('O que eu posso fazer para satisfaze-lo, mestre')
 
-def navegador():
-    os.system("start Chrome.exe")
-
 def melhortime():
     falar('O melhor time certamente é o corinthians')
 
@@ -198,43 +196,14 @@ def codigofonte():
     wb.open('https://github.com/MeirellesDEV/Assistente_Virtual')
 
 def apresentacao():
-    falar('Digas, o Pinaculo do Design')
+    falar('Digas, el Marico do Front')
     wb.open('https://github.com/RodrigoTheDev')
 
-    falar('Meirelles, a Sacerdotisa do Front')
+    falar('Meirelles, a Doutora do SQL')
     wb.open('https://github.com/MeirellesDEV')
 
     falar('João, o Redentor das APIs')
     wb.open('https://github.com/JGsilvaDev')
-
-def wikipedia():
-    wikipedia.set_lang("pt-BR")
-    falar('O que você quer pesquisar no wikipedia?')
-    s = recebeInput()
-    l = wikipedia.search(str(s))
-
-    for i in l:
-        falar(wikipedia.summary(i, sentences=1))
-
-def google(comando):
-    search_term = comando.replace("google", "")
-    url = 'https//www.google.com/search?q=' + search_term
-    wb.get().open(url)
-    falar("Aqui está o que você pesquisou" + search_term)
-
-def youtube(comando):
-    search_term = comando.replace("youtube", "")
-    url = 'https//www.youtube.com/results?search_query=' + search_term
-    wb.get().open(url)
-    falar("Aqui está o que você pesquisou" + search_term)
-
-def searchKey(dc, keywords, comando):
-
-    for i in keywords:
-        if i in comando:
-            return keywords.index(i)
-
-    return -1
 
 def chamou(list, command):
     for i in list:
@@ -251,38 +220,6 @@ def recebeInput():
 
     return comando
 
-def awake():
-    global acordado
-    acordado = not acordado
-
-def novoapelido():
-    global AWAKE_COMMANDS
-    falar('Como você quer me chamar a partir de hoje?')
-    comando = recebeInput()
-
-    comando.partition(' ')
-    AWAKE_COMMANDS.append(comando)
-
-    falar('Muito bem, '+comando+' foi adicionado como um novo apelido')
-
-def novonome():
-    global bot_name
-
-    falar('como você quer que eu me chame?')
-
-    novo_nome = recebeInput()
-
-    bot_name = novo_nome
-
-    falar('nome alterado com sucesso')
-
-def listarApelidos():
-    global AWAKE_COMMANDS
-
-    falar('As pessoas me chamam de: ')
-    for i in AWAKE_COMMANDS:
-        falar(i)
-
 def tradutor(fala):
     trans = Translator()
 
@@ -297,14 +234,14 @@ def tradutor(fala):
         'hu': 'hungarian', 'is': 'icelandic', 'ig': 'igbo', 'id': 'indonesian', 'ga': 'irish', 'it': 'italian',
         'ja': 'japanese', 'jw': 'javanese', 'kn': 'kannada', 'kk': 'kazakh', 'km': 'khmer', 'ko': 'korean',
         'ku': 'kurdish (kurmanji)', 'ky': 'kyrgyz', 'lo': 'lao', 'la': 'latin', 'lv': 'latvian', 'lt': 'lithuanian',
-        'lb': 'luxembourgish', 'mk': 'macedonian', 'mg': 'malagasy', 'ms': 'malay', 'ml': 'malayalam','mt': 'maltese',
+        'lb': 'luxembourgish', 'mk': 'macedonian', 'mg': 'malagasy', 'ms': 'malay', 'ml': 'malayalam', 'mt': 'maltese',
         'mi': 'maori', 'mr': 'marathi', 'mn': 'mongolian', 'my': 'myanmar (burmese)', 'ne': 'nepali', 'no': 'norwegian',
         'or': 'odia', 'ps': 'pashto', 'fa': 'persian', 'pl': 'polish', 'pt': 'portuguese', 'pa': 'punjabi',
         'ro': 'romanian', 'ru': 'russian', 'sm': 'samoan', 'gd': 'scots gaelic', 'sr': 'serbian', 'st': 'sesotho',
         'sn': 'shona', 'sd': 'sindhi', 'si': 'sinhala', 'sk': 'slovak', 'sl': 'slovenian', 'so': 'somali',
         'es': 'spanish', 'su': 'sundanese', 'sw': 'swahili', 'sv': 'swedish', 'tg': 'tajik', 'ta': 'tamil',
         'te': 'telugu', 'th': 'thai', 'tr': 'turkish', 'uk': 'ukrainian', 'ur': 'urdu', 'ug': 'uyghur', 'uz': 'uzbek',
-        'vi': 'vietnamese', 'cy': 'welsh', 'xh': 'xhosa', 'yi': 'yiddish', 'yo': 'yoruba','zu': 'zulu'
+        'vi': 'vietnamese', 'cy': 'welsh', 'xh': 'xhosa', 'yi': 'yiddish', 'yo': 'yoruba', 'zu': 'zulu'
     }
 
     txt = str(fala.replace('como fala', '').replace('em', '')).split()
@@ -315,38 +252,39 @@ def tradutor(fala):
     items = LANGUAGES.items()
 
     for item in items:
-        if(item[1] == idioma):
+        if (item[1] == idioma):
             codLang = item[0]
 
-    txt.pop()                   #retira a linguagem do array
+    txt.pop()  # retira a linguagem do array
     conteudo = ' '.join(txt)
 
     falar(trans.translate(conteudo, dest=codLang).text)
 
 def analisarFrase(str, id):
 
-    model = load_model('baxacinho.0.1')
+    model = load_model('baxacinho.0.3')
 
     frase = str
     nova_sequencia = tf.tokenizer.texts_to_sequences([frase])
-    nova_sequencia_padded = tf.pad_sequences(nova_sequencia, maxlen=100, truncating='post', padding='post')
+    nova_sequencia_padded = tf.pad_sequences(
+        nova_sequencia, maxlen=100, truncating='post', padding='post')
     prediction = model.predict(nova_sequencia_padded)[0]
 
     mapping_reverse = {0: 'alegria', 1: 'neutro', 2: 'tristeza', 3: 'raiva'}
 
     for i, prob in enumerate(prediction):
         # print(f'{mapping_reverse[i]}: {prob:.3f}')
-        
-        if f'{mapping_reverse[i]}' == 'alegria': 
+
+        if f'{mapping_reverse[i]}' == 'alegria':
             alegria = f'{prob:.3f}'
 
-        if f'{mapping_reverse[i]}' == 'raiva': 
+        if f'{mapping_reverse[i]}' == 'raiva':
             raiva = f'{prob:.3f}'
 
-        if f'{mapping_reverse[i]}' == 'tristeza': 
+        if f'{mapping_reverse[i]}' == 'tristeza':
             tristeza = f'{prob:.3f}'
 
-        if f'{mapping_reverse[i]}' == 'neutro': 
+        if f'{mapping_reverse[i]}' == 'neutro':
             neutro = f'{prob:.3f}'
 
     sentimento = tf.sentimento(alegria, raiva, tristeza, neutro)
@@ -356,15 +294,17 @@ def analisarFrase(str, id):
 
     cursor.execute("SELECT identificador FROM usuario u WHERE u.id = "+id)
     resultado = cursor.fetchall()
-    nomeTabela = resultado[0][0] 
+    nomeTabela = resultado[0][0]
 
-    cursor.execute("SELECT id FROM sentimento s WHERE s.nome = '"+sentimento+"'")
+    cursor.execute(
+        "SELECT id FROM sentimento s WHERE s.nome = '"+sentimento+"'")
     sent = cursor.fetchall()
-    id_sentimento = sent[0][0] 
+    id_sentimento = sent[0][0]
 
     dataAtual = datetime.date.today().strftime("%d/%m/%Y")
 
-    cursor.execute("INSERT INTO "+nomeTabela+"(id_usuario,id_sentimento,dt_insercao)VALUES(?,?,?)",(id, id_sentimento,dataAtual))
+    cursor.execute("INSERT INTO "+nomeTabela +
+                   "(id_usuario,id_sentimento,dt_insercao)VALUES(?,?,?)", (id, id_sentimento, dataAtual))
     conn.commit()
 
     return sentimento
@@ -375,10 +315,8 @@ def analisar_input(input_usuario):
     # nltk.download('stopwords')
     # nltk.download('wordnet')
 
-    palavras_chave = {'como você está': comoestou, 'hora': tempo, 'data': data, 'dia é hoje': data, 'navegador': navegador, 'melhor time': melhortime, 'modo texto': textMode, 'modo fala': textMode, 'quem é você': quemsoueu, 'finalizar': endapp, 'finaliza': endapp,
-                 'finalize': endapp, 'desligar': endapp, 'apresentação': apresentacao, 'spotify': spotify, 'dormir': awake, 'dormi': awake, 'novo apelido': novoapelido, 'quais apelidos': listarApelidos, 'que apelidos': listarApelidos, 'novo nome': novonome, 'wikipedia': wikipedia}
-    
-    # converte o input para minúsculas
+    palavras_chave = json.loads(open('input\palavras_chave.json', 'r').read())
+
     input_usuario = input_usuario.lower()
     
     # tokeniza o input em palavras
@@ -390,12 +328,21 @@ def analisar_input(input_usuario):
     # realiza a lematização das palavras (transformação das palavras para sua forma base)
     lemmatizer = WordNetLemmatizer()
     palavras_lemmatizadas = [lemmatizer.lemmatize(palavra) for palavra in palavras_sem_stopwords]
-    
-    # executa a função correspondente à primeira palavra-chave encontrada
-    for palavra in palavras_lemmatizadas:
-        if palavra in palavras_chave:
-            palavras_chave[palavra]()
-            break
+
+    funcao_executada = False
+
+    for row in palavras_chave:
+        indice = row['indice']
+        for palavra in palavras_lemmatizadas:
+            # print(palavra)
+            # print(palavras_lemmatizadas)
+            if palavra in indice:
+                eval(row['funcao'])
+                funcao_executada = True
+                break
+
+    if not funcao_executada:
+        openia(input_usuario) 
 
 def ultimoSentimento(id):
 
@@ -404,15 +351,15 @@ def ultimoSentimento(id):
 
     cursor.execute("SELECT identificador FROM usuario u WHERE u.id = "+id)
     resultado = cursor.fetchall()
-    nomeTabela = resultado[0][0] 
+    nomeTabela = resultado[0][0]
 
     cursor.execute("SELECT id_sentimento FROM "+nomeTabela+" ORDER BY id desc")
     idsent = cursor.fetchall()
-    id_sentimento = idsent[0][0] 
+    id_sentimento = idsent[0][0]
 
-    cursor.execute("SELECT s.nome FROM sentimento s WHERE s.id = '"+str(id_sentimento)+"'")
+    cursor.execute(
+        "SELECT s.nome FROM sentimento s WHERE s.id = '"+str(id_sentimento)+"'")
     sent = cursor.fetchall()
-    sentimento = sent[0][0] 
+    sentimento = sent[0][0]
 
     return sentimento
-
