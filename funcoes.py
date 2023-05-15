@@ -7,6 +7,7 @@ import openai as op
 
 import sqlite3
 import datetime
+import time
 
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
@@ -28,7 +29,6 @@ texto_fala = py.init()
 # variáveis de controle
 # modo texto, se for verdadeiro, irá alternar a fala do microfone para modo de teclado
 text_mode = True
-acordado = False
 bot_name = 'bacaxinho'  # nome do bot
 
 # funcoes de configuração
@@ -349,7 +349,7 @@ def ultimoSentimento(id):
     conn = sqlite3.connect('bacaxinho.db')
     cursor = conn.cursor()
 
-    cursor.execute("SELECT identificador FROM usuario u WHERE u.id = "+id)
+    cursor.execute("SELECT identificador FROM usuario u WHERE u.id = '"+str(id)+"'")
     resultado = cursor.fetchall()
     nomeTabela = resultado[0][0]
 
@@ -363,3 +363,106 @@ def ultimoSentimento(id):
     sentimento = sent[0][0]
 
     return sentimento
+
+def nivelSentimento(sentimento, id):
+
+    conn = sqlite3.connect('bacaxinho.db')
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT count(id) FROM contSentimento cs WHERE cs.id_usuario = '"+id+"'")
+    resultado = cursor.fetchall()
+    existe = resultado[0][0]
+  
+    # verifica se tem algum usuario existente na tabela
+    if existe == 0:
+        cursor.execute("INSERT INTO contSentimento(id_usuario,felicidade,tristeza,raiva,neutralidade)VALUES(?,0,0,0,0)",(id))
+        conn.commit()
+    else:
+        # traz os sentimentos para analise
+        cursor.execute("SELECT cs.alegria, cs.tristeza, cs.raiva, cs.neutralidade FROM contSentimento cs WHERE cs.id_usuario = '"+id+"'")
+        resultado = cursor.fetchall()
+        alegria = resultado[0][0]
+        tristeza = resultado[0][1]
+        raiva = resultado[0][2]
+        neutralidade = resultado[0][3]
+
+        # verifica qual snetimento esta vindo como parametro na função
+        if sentimento == 'alegria':
+            # acrecenta +2
+            alegria = alegria + 2
+
+            # esse tipo de if é para não colocar numeros negativos
+            if tristeza != 0:
+                tristeza = tristeza - 1
+
+            if raiva != 0:
+                raiva = raiva - 1
+
+            if neutralidade != 0:
+                neutralidade = neutralidade - 1
+
+        elif sentimento == 'tristeza':
+            tristeza = tristeza + 2
+
+            if alegria != 0:
+                alegria = alegria - 1
+
+            if raiva != 0:
+                raiva = raiva - 1
+
+            if neutralidade != 0:
+                neutralidade = neutralidade - 1
+
+        elif sentimento == 'raiva':
+            raiva = raiva + 2
+
+            if alegria != 0:
+                alegria = alegria - 1
+
+            if neutralidade != 0:
+                neutralidade = neutralidade - 1
+
+            if tristeza != 0:
+                tristeza = tristeza - 1
+
+        else:
+            neutralidade = neutralidade + 2
+
+            if tristeza != 0:
+                tristeza = tristeza - 1
+
+            if alegria != 0:
+                alegria = alegria - 1
+
+            if raiva != 0:
+                raiva = raiva - 1
+        
+        # executa o update referente aos dados que vieram do if
+        cursor.execute("UPDATE contSentimento SET alegria = ?, tristeza = ?, raiva = ?, neutralidade = ? WHERE id_usuario = ?",(alegria,tristeza,raiva,neutralidade,id))
+        conn.commit()
+
+        time.sleep(1)
+
+        # retorna por front qual é o sentimento com base no numero de 
+        if alegria > raiva and alegria > tristeza  and alegria > neutralidade:
+            # caso tenha mais que 2 ele mudaria a carinha exibida isso para todos os sentimentos
+            if alegria > 4:
+                return ('To felizasssooooooo')
+            else:
+                return ("To feliz")
+
+        elif tristeza > raiva and tristeza > neutralidade and tristeza > alegria:
+            if tristeza > 4:
+                return ('To tristassooooooo')
+            else:
+                return ("To triste")
+
+        elif raiva > tristeza and raiva > neutralidade and raiva > alegria:
+            if raiva > 4:
+                return('To mutioooooo pútoooooo')
+            else:
+                return("To púto")
+        else:
+            return('To neutro')
+    
+

@@ -1,9 +1,5 @@
 import funcoes as fc
 
-# variáveis de comandos
-AWAKE_COMMANDS = ['bacaxinho', 'abacaxi', 'cachinho', 'cachimbo', 'ximbinha',
-                  'maluco', 'acorda porra', 'zé ruela', 'cabeça de lata']
-
 if __name__ == "__main__":
 
     # loop principal
@@ -13,6 +9,11 @@ if __name__ == "__main__":
 
         # recebendo o input
         comando = fc.recebeInput()
+
+        #pega o utlimo sentimento
+        sentimento = fc.ultimoSentimento(id)
+
+        fc.nivelSentimento(sentimento, id)
 
         # função que salva o sentimento no banco
         fc.analisarFrase(comando, id)
