@@ -1,3 +1,7 @@
 bot-venv
+otherversions
+ambientepython
+.cache
+assistenteVirtual
 testes
-requirements.txt
+flask
